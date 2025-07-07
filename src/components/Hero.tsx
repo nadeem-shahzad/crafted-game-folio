@@ -1,8 +1,26 @@
+
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin } from "lucide-react";
 import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.querySelector('#projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const downloadCV = () => {
+    // Create a temporary link to download CV
+    const link = document.createElement('a');
+    link.href = '/cv-alex-chen.pdf'; // You can replace this with actual CV file path
+    link.download = 'Alex-Chen-CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-background dark:from-orange-950/20 dark:to-background px-4">
@@ -20,11 +38,20 @@ const Hero = () => {
               Specializing in Unity, Unreal Engine, and mobile game development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg">
+              <Button 
+                size="lg" 
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg"
+                onClick={downloadCV}
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-8 py-4 text-lg"
+                onClick={scrollToProjects}
+              >
                 View Projects
               </Button>
             </div>
