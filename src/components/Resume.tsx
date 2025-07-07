@@ -41,12 +41,6 @@ const Resume = () => {
       credentialId: "UC-12345"
     },
     {
-      name: "Unreal Engine Blueprint Specialist",
-      issuer: "Epic Games",
-      year: "2022",
-      credentialId: "UE-67890"
-    },
-    {
       name: "Mobile Game Development",
       issuer: "Google Play Academy",
       year: "2023",
@@ -113,6 +107,31 @@ const Resume = () => {
                 <CardContent>
                   <p className="text-orange-600 dark:text-orange-400 font-medium mb-2">{exp.company}</p>
                   <p className="text-sm text-muted-foreground">{exp.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+           {/* Certifications */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
+                <Award className="h-6 w-6 text-orange-600 dark:text-orange-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
+            </div>
+            {certifications.map((cert, index) => (
+              <Card key={index} className="border-l-4 border-l-orange-500">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg">{cert.name}</CardTitle>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Calendar className="h-4 w-4" />
+                    <span className="text-sm">{cert.year}</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-orange-600 dark:text-orange-400 font-medium mb-2">{cert.issuer}</p>
+                  <p className="text-xs text-muted-foreground">ID: {cert.credentialId}</p>
                 </CardContent>
               </Card>
             ))}
