@@ -6,8 +6,8 @@ const Skills = () => {
       description: "Expertise in Unity engine for 3D and 2D game development, including C# scripting and asset integration."
     },
     {
-      name: "Unreal Engine",
-      level: 75,
+      name: "Game Design and Development",
+      level: 85,
       description: "Proficient with Unreal Engine, Blueprints, and C++ for high-fidelity game experiences."
     },
     {
@@ -26,9 +26,9 @@ const Skills = () => {
       description: "Skilled in optimizing games for iOS and Android platforms with responsive controls and UI."
     },
     {
-      name: "3D Modeling",
-      level: 60,
-      description: "Basic knowledge of 3D modeling and animation workflows to collaborate effectively with artists."
+      name: "Photoshop",
+      level: 70,
+      description: "Mastering Photoshop means turning imagination into pixel-perfect reality."
     }
   ];
 
