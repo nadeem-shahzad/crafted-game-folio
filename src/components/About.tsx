@@ -31,24 +31,24 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">15+</div>
-                <div className="text-muted-foreground"><strong>Name:</strong> Nadeem Shahzad</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">Name</div>
+                <div className="text-muted-foreground">Nadeem Shahzad</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">5M+</div>
-                <div className="text-muted-foreground"><strong>Date of birth:</strong> December 18, 1997</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">Date of Birth</div>
+                <div className="text-muted-foreground">December 18, 1997</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">98%</div>
-                <div className="text-muted-foreground"><strong>Address:</strong> Architect Society, Johar Town Lahore</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">Address</div>
+                <div className="text-muted-foreground">Architect Society, Johar Town Lahore</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">50+</div>
-                <div className="text-muted-foreground"><strong>Email:</strong> nadeem.shahzad.10236@gmail.com</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">Email</div>
+                <div className="text-muted-foreground">nadeem.shahzad.10236@gmail.com</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">50+</div>
-                <div className="text-muted-foreground"><strong>Phone:</strong> +92-340-7631749</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">Phone</div>
+                <div className="text-muted-foreground">+92-340-7631749</div>
               </div>
             </div>
           </div>
