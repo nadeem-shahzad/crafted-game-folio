@@ -6,36 +6,36 @@ const Resume = () => {
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      year: "2018 - 2022",
+      school: "University of Narowal, Pakistan",
+      year: "2015-2019",
       description: "Specialized in Game Development and Computer Graphics"
     },
     {
-      degree: "Game Development Bootcamp",
-      school: "Unity Academy",
-      year: "2022",
-      description: "Intensive 6-month program focused on Unity and C# development"
+      degree: "Master of Science in Data Science",
+      school: "University of Management and Technology, Lahore",
+      year: "2021-2023",
+      description: "My Master's degree in Data Science equipped me with advanced knowledge and skills in data analysis, machine learning, and statistical modeling. This program wasn't just about theory - I delved into practical applications through courses on Game Analytics, AI and Machine Learning in Games and Data-Driven Game Design."
     }
   ];
 
   const experience = [
     {
+      position: "Leading the Hyper Casual Charge",
+      company: "Sabasoft, Lahore",
+      period: "2019 - 2022",
+      description: "For three years, I had the pleasure of working at Sabasoft, a game development company focused on creating engaging hyper casual games. During my time there, I played a key role in the development of a staggering 20 Hyper Casual games, contributing significantly to the studio's success."
+    },
+    {
       position: "Senior Game Developer",
-      company: "Pixel Studios",
-      period: "2023 - Present",
-      description: "Lead developer for mobile RPG games with over 1M+ downloads. Responsible for gameplay mechanics, UI/UX implementation, and performance optimization."
+      company: "Coeus Solutions",
+      period: "2022-Present",
+      description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
     },
     {
-      position: "Game Developer",
-      company: "Indie Game Collective",
-      period: "2022 - 2023",
-      description: "Developed multiple indie games using Unity and Unreal Engine. Collaborated with artists and designers to create engaging gaming experiences."
-    },
-    {
-      position: "Junior Developer",
-      company: "TechStart Gaming",
-      period: "2021 - 2022",
-      description: "Assisted in developing casual mobile games. Gained experience in mobile optimization and cross-platform development."
+      position: "Senior Game Developer",
+      company: "Coeus Solutions",
+      period: "2022-Present",
+      description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
     }
   ];
 
