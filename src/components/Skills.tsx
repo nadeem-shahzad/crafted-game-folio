@@ -2,7 +2,7 @@ const Skills = () => {
   const skills = [
     {
       name: "Unity",
-      level: 90,
+      level: 95,
       description: "Expertise in Unity engine for 3D and 2D game development, including C# scripting and asset integration."
     },
     {
@@ -26,9 +26,14 @@ const Skills = () => {
       description: "Skilled in optimizing games for iOS and Android platforms with responsive controls and UI."
     },
     {
-      name: "3D Modeling",
-      level: 60,
+      name: "Level Design",
+      level: 80,
       description: "Basic knowledge of 3D modeling and animation workflows to collaborate effectively with artists."
+    }
+    {
+      name: "Photoshop",
+      level: 85,
+      description: "Mastering Photoshop means turning imagination into pixel-perfect reality."
     }
   ];
 
