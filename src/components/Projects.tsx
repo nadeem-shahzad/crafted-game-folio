@@ -25,14 +25,14 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             🎮 My Work
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Projects</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-4">Recent Projects</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Here are some of my latest game development projects that showcase my skills and creativity.
           </p>
         </div>
@@ -41,7 +41,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -58,14 +58,14 @@ const Projects = () => {
               
               <div className="p-6">
                 <div className="text-sm text-orange-500 font-medium mb-2">{project.category}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-bold text-card-foreground mb-3">{project.title}</h3>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
                     >
                       {tag}
                     </span>
