@@ -30,12 +30,12 @@ const Hero = () => {
               👋 Hello There!
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-              I'm Alex Chen
-              <span className="block text-orange-500">Game Developer</span>
+              I'm Nadeem Shahzad
+              <span className="block text-orange-500">Game Developer & Designer</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
               Passionate about creating immersive gaming experiences with cutting-edge technology. 
-              Specializing in Unity, Unreal Engine, and mobile game development.
+              Specializing in Unity, and mobile game development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button 
