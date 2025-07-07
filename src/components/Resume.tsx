@@ -32,10 +32,10 @@ const Resume = () => {
       description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
     },
     {
-      position: "Senior Game Developer",
-      company: "Coeus Solutions",
-      period: "2022-Present",
-      description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
+      position: "Building Games, Building Dreams: My Freelance Journey",
+      company: "Fiverr and Upwork",
+      period: "2019-Present",
+      description: "In 2019, I embarked on a thrilling adventure: the world of freelance game development. Fueled by a passion for creating engaging experiences and the freedom to explore different genres, I've spent the past few years honing my skills and building a diverse portfolio of games. This freelance journey has been an incredible learning experience."
     }
   ];
 
@@ -123,31 +123,7 @@ const Resume = () => {
               </Card>
             ))}
           </div>
-
-          {/* Certifications */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
-                <Award className="h-6 w-6 text-orange-600 dark:text-orange-400" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
-            </div>
-            {certifications.map((cert, index) => (
-              <Card key={index} className="border-l-4 border-l-orange-500">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg">{cert.name}</CardTitle>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Calendar className="h-4 w-4" />
-                    <span className="text-sm">{cert.year}</span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-orange-600 dark:text-orange-400 font-medium mb-2">{cert.issuer}</p>
-                  <p className="text-xs text-muted-foreground">ID: {cert.credentialId}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
         </div>
       </div>
     </section>
