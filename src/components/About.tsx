@@ -20,12 +20,10 @@ const About = () => {
               ✨ About Me
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              I Create Games That
-              <span className="block text-orange-500">Make People Happy</span>
+              I am a passionate game designer
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              With over 5 years of experience in game development, I've shipped 15+ games across mobile, PC, and console platforms. 
-              My passion lies in crafting immersive experiences that bring joy to millions of players worldwide.
+             And developer with over 5 years of professional experience. I bring a diverse skillset to the table, having developed games across various genres including FPS, TPS, RPG, AR/VR, Simulation, EdTech, Casual, Single-player, Multiplayer, and Multi-Platform (PC, Consoles, Mobile, Web). I am also well-versed in profiling Mobile and PC games to ensure optimal performance.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               I believe great games are born from the perfect blend of technical excellence, creative vision, and player-centered design.
@@ -34,19 +32,23 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">15+</div>
-                <div className="text-muted-foreground">Games Shipped</div>
+                <div className="text-muted-foreground"><strong>Name:</strong> Nadeem Shahzad</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">5M+</div>
-                <div className="text-muted-foreground">Downloads</div>
+                <div className="text-muted-foreground"><strong>Date of birth:</strong> December 18, 1997</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">98%</div>
-                <div className="text-muted-foreground">Client Satisfaction</div>
+                <div className="text-muted-foreground"><strong>Address:</strong> Architect Society, Johar Town Lahore</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">50+</div>
-                <div className="text-muted-foreground">Happy Clients</div>
+                <div className="text-muted-foreground"><strong>Email:</strong> nadeem.shahzad.10236@gmail.com</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-orange-500 mb-2">50+</div>
+                <div className="text-muted-foreground"><strong>Phone:</strong> +92-340-7631749</div>
               </div>
             </div>
           </div>
