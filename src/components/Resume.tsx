@@ -30,12 +30,6 @@ const Resume = () => {
       company: "Coeus Solutions",
       period: "2022-Present",
       description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
-    },
-    {
-      position: "Building Games, Building Dreams: My Freelance Journey",
-      company: "Fiverr and Upwork",
-      period: "2019-Present",
-      description: "In 2019, I embarked on a thrilling adventure: the world of freelance game development. Fueled by a passion for creating engaging experiences and the freedom to explore different genres, I've spent the past few years honing my skills and building a diverse portfolio of games. This freelance journey has been an incredible learning experience."
     }
   ];
 
