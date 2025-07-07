@@ -4,6 +4,13 @@ const About = () => {
     "Epic Games", "Unity Technologies", "Riot Games", "Blizzard", "Ubisoft", "EA Sports"
   ];
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
@@ -48,7 +55,10 @@ const About = () => {
             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-8 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to Collaborate?</h3>
               <p className="mb-6">Let's create something amazing together!</p>
-              <button className="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button 
+                onClick={scrollToContact}
+                className="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
                 Get In Touch
               </button>
             </div>

@@ -1,11 +1,44 @@
 
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    projectType: 'Mobile Game',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+    // Here you would typically send the data to a backend service
+    alert('Thank you for your message! I\'ll get back to you soon.');
+    
+    // Reset form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      projectType: 'Mobile Game',
+      message: ''
+    });
+  };
+
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-orange-50 to-muted/50 dark:from-orange-950/20 dark:to-muted/20">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-orange-50 to-muted/50 dark:from-orange-950/20 dark:to-muted/20">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -65,28 +98,60 @@ const Contact = () => {
           </div>
 
           <div className="bg-card p-8 rounded-2xl shadow-lg border">
-            <h3 className="text-2xl font-bold text-card-foreground mb-6">Send Message</h3>
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-2xl font-bold text-card-foreground">Send Message</h3>
+              <Button 
+                className="bg-green-500 hover:bg-green-600 text-white"
+                onClick={() => window.open('mailto:alex.chen@gamedev.com?subject=Hire Me - Game Development Project', '_blank')}
+              >
+                Hire Me
+              </Button>
+            </div>
             
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-card-foreground mb-2">First Name</label>
-                  <Input placeholder="John" />
+                  <Input 
+                    name="firstName"
+                    placeholder="John" 
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-card-foreground mb-2">Last Name</label>
-                  <Input placeholder="Doe" />
+                  <Input 
+                    name="lastName"
+                    placeholder="Doe" 
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-card-foreground mb-2">Email</label>
-                <Input type="email" placeholder="john@example.com" />
+                <Input 
+                  type="email" 
+                  name="email"
+                  placeholder="john@example.com" 
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                />
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-card-foreground mb-2">Project Type</label>
-                <select className="w-full p-3 border border-input bg-background text-foreground rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                <select 
+                  name="projectType"
+                  className="w-full p-3 border border-input bg-background text-foreground rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  value={formData.projectType}
+                  onChange={handleInputChange}
+                >
                   <option>Mobile Game</option>
                   <option>PC Game</option>
                   <option>Console Game</option>
@@ -98,12 +163,16 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-card-foreground mb-2">Message</label>
                 <Textarea 
+                  name="message"
                   placeholder="Tell me about your project..."
                   rows={5}
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
                 />
               </div>
               
-              <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg">
+              <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg">
                 Send Message
               </Button>
             </form>

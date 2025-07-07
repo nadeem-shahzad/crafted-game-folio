@@ -1,39 +1,64 @@
-
 const Skills = () => {
   const skills = [
-    { name: "Unity", icon: "🎯", level: 95 },
-    { name: "Unreal Engine", icon: "🚀", level: 90 },
-    { name: "C#", icon: "💻", level: 92 },
-    { name: "C++", icon: "⚡", level: 88 },
-    { name: "Mobile Dev", icon: "📱", level: 85 },
-    { name: "3D Modeling", icon: "🎨", level: 80 }
+    {
+      name: "Unity",
+      level: 90,
+      description: "Expertise in Unity engine for 3D and 2D game development, including C# scripting and asset integration."
+    },
+    {
+      name: "Unreal Engine",
+      level: 75,
+      description: "Proficient with Unreal Engine, Blueprints, and C++ for high-fidelity game experiences."
+    },
+    {
+      name: "C#",
+      level: 95,
+      description: "Strong command of C# for game logic, tools development, and gameplay programming."
+    },
+    {
+      name: "C++",
+      level: 70,
+      description: "Experience with C++ for performance-critical game systems and Unreal Engine development."
+    },
+    {
+      name: "Mobile Development",
+      level: 85,
+      description: "Skilled in optimizing games for iOS and Android platforms with responsive controls and UI."
+    },
+    {
+      name: "3D Modeling",
+      level: 60,
+      description: "Basic knowledge of 3D modeling and animation workflows to collaborate effectively with artists."
+    }
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted/50">
+    <section id="skills" className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">What I Do?</h2>
+          <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            🛠️ Skills
+          </div>
+          <h2 className="text-4xl font-bold text-foreground mb-4">My Expertise</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I specialize in creating engaging games across multiple platforms using industry-leading tools and technologies.
+            A blend of technical skills and creative problem-solving to build engaging and polished games.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
-              key={skill.name}
-              className="bg-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border"
+              key={index}
+              className="bg-card p-6 rounded-2xl border shadow-sm hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="text-4xl mb-4">{skill.icon}</div>
               <h3 className="text-xl font-semibold text-card-foreground mb-2">{skill.name}</h3>
-              <div className="w-full bg-muted rounded-full h-2 mb-2">
+              <div className="w-full bg-muted rounded-full h-4 mb-4 overflow-hidden">
                 <div
-                  className="bg-gradient-to-r from-orange-400 to-orange-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                  className="bg-orange-500 h-4 rounded-full transition-all duration-500"
                   style={{ width: `${skill.level}%` }}
-                ></div>
+                />
               </div>
-              <span className="text-sm text-muted-foreground">{skill.level}%</span>
+              <p className="text-muted-foreground text-sm">{skill.description}</p>
             </div>
           ))}
         </div>
