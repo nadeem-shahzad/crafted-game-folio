@@ -68,8 +68,8 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
                 <img
-                  src="/lovable-uploads/3bb88b1f-9741-4b99-a9b5-a2153030eae8.png"
-                  alt="Alex Chen - Game Developer"
+                  src="/lovable-uploads/nadeem.png"
+                  alt="Nadeem Shahzad - Game Developer"
                   className="w-72 h-72 lg:w-88 lg:h-88 rounded-full object-cover border-4 border-background shadow-2xl"
                 />
               </div>
