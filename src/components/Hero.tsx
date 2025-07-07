@@ -4,17 +4,17 @@ import { Download, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-white px-4">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-background dark:from-orange-950/20 dark:to-background px-4">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         <div className="flex-1 text-center lg:text-left">
-          <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             👋 Hello There!
           </div>
-          <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             I'm Alex Chen
             <span className="block text-orange-500">Game Developer</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
             Passionate about creating immersive gaming experiences with cutting-edge technology. 
             Specializing in Unity, Unreal Engine, and mobile game development.
           </p>
@@ -23,7 +23,7 @@ const Hero = () => {
               <Download className="mr-2 h-5 w-5" />
               Download CV
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-gray-300">
+            <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
               View Projects
             </Button>
           </div>
@@ -42,7 +42,7 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/3bb88b1f-9741-4b99-a9b5-a2153030eae8.png"
                 alt="Alex Chen - Game Developer"
-                className="w-72 h-72 lg:w-88 lg:h-88 rounded-full object-cover border-4 border-white shadow-2xl"
+                className="w-72 h-72 lg:w-88 lg:h-88 rounded-full object-cover border-4 border-background shadow-2xl"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
