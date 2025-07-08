@@ -44,11 +44,11 @@ const About = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">Email</div>
-                <div className="text-muted-foreground">nadeem.shahzad.10236@gmail.com</div>
+                <div className="text-muted-foreground">nadeem.shahzad@nplays.tech</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500 mb-2">Phone</div>
-                <div className="text-muted-foreground">+92-340-7631749</div>
+                <div className="text-muted-foreground">+92 (340) 763-1749</div>
               </div>
             </div>
           </div>
