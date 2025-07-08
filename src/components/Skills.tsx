@@ -21,7 +21,7 @@ const Skills = () => {
       description: "Experience with C++ for performance-critical game systems and Unreal Engine development."
     },
     {
-      name: "Mobile Development",
+      name: "Mobile Game Development",
       level: 85,
       description: "Skilled in optimizing games for iOS and Android platforms with responsive controls and UI."
     },
