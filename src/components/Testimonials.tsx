@@ -5,7 +5,7 @@ const Testimonials = () => {
       name: "Sarah Johnson",
       role: "Product Manager at Epic Games",
       avatar: "photo-1487058792275-0ad4aaf24ca7",
-      content: "Alex delivered an exceptional game that exceeded our expectations. His attention to detail and technical expertise is outstanding."
+      content: "Excellent Work. I was extremely impressed with Nadeem's work on my game. He consistently delivered high-quality code, met deadlines, and was always open to feedback and suggestions. The game's performance is smooth, the graphics are stunning, and the gameplay is engaging. Nadeem demonstrated a deep understanding of Unity and mobile game development best practices. I would highly recommend him to anyone looking for a talented and reliable Unity developer."
     },
     {
       name: "Michael Chen",
