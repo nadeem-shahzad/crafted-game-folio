@@ -50,6 +50,21 @@ const Projects = () => {
         "Hint system for difficult puzzles",
         "Offline play support"
       ]
+    },
+    {
+      title: "Puzzle Master",
+      category: "Casual Game",
+      image: "photo-1518770660439-4636190af475",
+      description: "Brain-teasing puzzle game with over 500 unique levels",
+      tags: ["Unity", "Mobile", "iOS"],
+      detailedDescription: "Challenge your mind with increasingly complex puzzles that test logic, pattern recognition, and spatial reasoning.",
+      features: [
+        "500+ handcrafted puzzle levels",
+        "Daily challenges and rewards",
+        "Social features and leaderboards",
+        "Hint system for difficult puzzles",
+        "Offline play support"
+      ]
     }
   ];
 
