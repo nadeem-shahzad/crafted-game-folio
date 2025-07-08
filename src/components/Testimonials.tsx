@@ -2,22 +2,22 @@
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Product Manager at Epic Games",
+      name: "Saleem Basit",
+      role: "Lead Game Developer at Earthfactor Pvt Ltd",
       avatar: "photo-1487058792275-0ad4aaf24ca7",
       content: "Excellent Work. I was extremely impressed with Nadeem's work on my game. He consistently delivered high-quality code, met deadlines, and was always open to feedback and suggestions. The game's performance is smooth, the graphics are stunning, and the gameplay is engaging. Nadeem demonstrated a deep understanding of Unity and mobile game development best practices. I would highly recommend him to anyone looking for a talented and reliable Unity developer."
     },
     {
-      name: "Michael Chen",
-      role: "Lead Designer at Unity",
+      name: "Paul Krieg",
+      role: "Project Owner",
       avatar: "photo-1500673922987-e212871fec22",
-      content: "Working with Alex was a pleasure. He brought our vision to life with creativity and professionalism."
+      content: "Absolutely impressed with Nadeem's creation, Treasure Sweeper! The game's innovative twist on Minesweeper, coupled with its engaging design and seamless interface, showcases Nadeem's exceptional talent in game development. The incorporation of the treasure theme adds a layer of excitement, making it a standout experience. Kudos to Nadeem for sharing these skills with the gaming community—I can't wait to see more of their imaginative creations in the future! 🌟"
     },
     {
-      name: "Emily Davis",
-      role: "CEO at GameStudio",
+      name: "Dillon Powers",
+      role: "CEO at NPlays",
       avatar: "photo-1526374965328-7f61d4dc18c5",
-      content: "Alex's games consistently achieve high ratings and player engagement. He's our go-to developer for challenging projects."
+      content: "Nadeem is very professional and went above and beyond to make sure my project needs were met. He was always quick with his communication and took time to understand the product and what I was trying to achieve and I think that really helped bring things to life. Thanks Nadeem!"
     }
   ];
 
