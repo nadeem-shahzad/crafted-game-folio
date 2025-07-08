@@ -38,13 +38,11 @@ const Resume = () => {
       name: "Unity Certified Programmer",
       issuer: "Unity Technologies",
       year: "2023",
-      credentialId: "UC-12345"
     },
     {
       name: "Mobile Game Development",
       issuer: "Google Play Academy",
       year: "2023",
-      credentialId: "GP-11111"
     }
   ];
 
@@ -131,7 +129,6 @@ const Resume = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-orange-600 dark:text-orange-400 font-medium mb-2">{cert.issuer}</p>
-                  <p className="text-xs text-muted-foreground">ID: {cert.credentialId}</p>
                 </CardContent>
               </Card>
             ))}
