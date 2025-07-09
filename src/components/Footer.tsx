@@ -37,14 +37,16 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>Unity</li>
               <li>Unreal Engine</li>
-              <li>C# / C++</li>
-              <li>Mobile Development</li>
+              <li>Roblox</li>
+              <li>C# / C++ / LUA</li>
+              <li>Mobile Game Development</li>
+              <li>Mobile App Development</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Alex Chen. All rights reserved. Built with ❤️ for gaming.</p>
+          <p>&copy; 2025 Nadeem Shahzad. All rights reserved. Built with ❤️ for gaming.</p>
         </div>
       </div>
     </footer>
