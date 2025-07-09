@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectModal from './ProjectModal';
@@ -107,6 +106,11 @@ const Projects = () => {
     setIsAllProjectsModalOpen(false);
   };
 
+  const handleViewDetails = (project) => {
+    setIsAllProjectsModalOpen(false);
+    openProjectModal(project);
+  };
+
   return (
     <>
       <section id="projects" className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
@@ -123,8 +127,8 @@ const Projects = () => {
 
           {/* Horizontal Scrolling Cards */}
           <div className="relative">
-            <ScrollArea className="w-full">
-              <div className="flex gap-6 pb-4 px-4">
+            <div className="overflow-x-auto">
+              <div className="flex gap-6 pb-4 px-4 min-w-max">
                 {projects.map((project, index) => (
                   <div
                     key={index}
@@ -165,7 +169,7 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
-            </ScrollArea>
+            </div>
           </div>
 
           {/* View All Projects Button */}
@@ -189,7 +193,7 @@ const Projects = () => {
 
       {/* All Projects Modal */}
       <Dialog open={isAllProjectsModalOpen} onOpenChange={setIsAllProjectsModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh]">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-center mb-4">All Projects</DialogTitle>
           </DialogHeader>
@@ -209,7 +213,7 @@ const Projects = () => {
                       <span className="text-sm text-orange-500 font-medium">{project.category}</span>
                     </div>
                     <p className="text-muted-foreground text-sm mb-3">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
@@ -219,13 +223,20 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
+                    <Button 
+                      onClick={() => handleViewDetails(project)}
+                      size="sm"
+                      className="bg-orange-500 hover:bg-orange-600 text-white"
+                    >
+                      View Details
+                    </Button>
                   </div>
                 </div>
               ))}
             </div>
           </ScrollArea>
           
-          <div className="flex justify-center pt-4">
+          <div className="flex justify-center pt-4 border-t">
             <Button 
               onClick={closeAllProjectsModal}
               variant="outline"
