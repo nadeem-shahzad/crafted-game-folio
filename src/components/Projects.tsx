@@ -287,7 +287,7 @@ const Projects = () => {
               {projects.map((project, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 transition-colors">
                   <img
-                    src={`https://images.unsplash.com/${project.image}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80`}
+                    src={project.image}
                     alt={project.title}
                     className="w-20 h-20 object-cover rounded-lg flex-shrink-0"
                   />
