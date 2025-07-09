@@ -45,55 +45,50 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h2 className="text-xl font-bold text-orange-500">Nadeem Shahzad</h2>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    activeSection === item.id
-                      ? "bg-orange-500 text-white"
-                      : "text-foreground hover:bg-muted hover:text-orange-500"
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+      {/* Desktop Navigation - Centered with rounded edges */}
+      <div className="hidden md:block bg-background/95 backdrop-blur-sm border border-border rounded-full px-6 py-3 shadow-lg">
+        <div className="flex items-center space-x-1">
+          {navItems.map((item) => (
+            <button
+              key={item.name}
+              onClick={() => scrollToSection(item.href)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                activeSection === item.id
+                  ? "bg-orange-500 text-white shadow-md"
+                  : "text-foreground hover:bg-muted hover:text-orange-500"
+              }`}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+              {item.name}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="md:hidden">
+        {/* Mobile menu button */}
+        <div className="bg-background/95 backdrop-blur-sm border border-border rounded-full p-2 shadow-lg">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+            className="rounded-full"
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48">
+            <div className="bg-background/95 backdrop-blur-sm border border-border rounded-2xl p-2 shadow-lg">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
+                  className={`block w-full px-4 py-2 rounded-xl text-sm font-medium text-left transition-colors ${
                     activeSection === item.id
                       ? "bg-orange-500 text-white"
                       : "text-foreground hover:bg-muted hover:text-orange-500"
