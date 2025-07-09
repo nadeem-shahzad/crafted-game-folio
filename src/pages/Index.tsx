@@ -8,20 +8,40 @@ import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
-      <Hero />
-      <Skills />
-      <About />
-      <Resume />
-      <Services />
-      <Projects />
-      <Testimonials />
-      <Contact />
+      <Navigation />
+      <div className="absolute top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );
