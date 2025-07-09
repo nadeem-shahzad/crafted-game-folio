@@ -37,28 +37,6 @@ const Projects = () => {
     "github": null
   }
 },
-   {
-  "title": "Galactic Acres - Web3",
-  "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/1RPAU5WyvIQSzFaU1C50jEhtJMSftDykC7AHqFCPtxrLk4Zcs0PXoXYgaAyaxWtkLA=w240-h480-rw",
-  "description": "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
-  "tags": ["Web3", "Simulation", "Idle", "Strategy"],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.goodgaming.galactic",
-    "github": null
-  }
-},
-    {
-  "title": "Matty the Water Molecule",
-  "category": "Educational Game",
-  "image": "https://www.engagingeverystudent.com/wp-content/uploads/2023/05/logo.png",
-  "description": "Educational game teaching children about water molecules through engaging gameplay.",
-  "tags": ["Education", "Kids", "Science"],
-  "links": {
-    "demo": "https://www.engagingeverystudent.com/matty/",
-    "github": null
-  }
-},
     {
   "title": "Matty the Water Molecule",
   "category": "Educational Game",
@@ -242,7 +220,7 @@ const Projects = () => {
                   >
                     <div className="relative overflow-hidden">
                       <img
-                        src={`https://images.unsplash.com/${project.image}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`}
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                       />
