@@ -37,66 +37,161 @@ const Projects = () => {
     "github": null
   }
 },
+   {
+  "title": "Galactic Acres - Web3",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/1RPAU5WyvIQSzFaU1C50jEhtJMSftDykC7AHqFCPtxrLk4Zcs0PXoXYgaAyaxWtkLA=w240-h480-rw",
+  "description": "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
+  "tags": ["Web3", "Simulation", "Idle", "Strategy"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.goodgaming.galactic",
+    "github": null
+  }
+},
     {
-      title: "Cyber Racing 2030",
-      category: "Racing Game",
-      image: "photo-1486312338219-ce68d2c6f44d",
-      description: "Futuristic racing game with advanced AI and multiplayer support",
-      tags: ["Unreal Engine", "C++", "PC"],
-      detailedDescription: "Experience the thrill of high-speed racing in a cyberpunk future with anti-gravity vehicles and neon-lit cityscapes.",
-      features: [
-        "15 futuristic racing tracks",
-        "Advanced AI opponents",
-        "Online multiplayer tournaments",
-        "Vehicle customization system",
-        "Dynamic weather effects"
-      ]
-    },
+  "title": "Matty the Water Molecule",
+  "category": "Educational Game",
+  "image": "https://www.engagingeverystudent.com/wp-content/uploads/2023/05/logo.png",
+  "description": "Educational game teaching children about water molecules through engaging gameplay.",
+  "tags": ["Education", "Kids", "Science"],
+  "links": {
+    "demo": "https://www.engagingeverystudent.com/matty/",
+    "github": null
+  }
+},
     {
-      title: "Puzzle Master",
-      category: "Casual Game",
-      image: "photo-1518770660439-4636190af475",
-      description: "Brain-teasing puzzle game with over 500 unique levels",
-      tags: ["Unity", "Mobile", "iOS"],
-      detailedDescription: "Challenge your mind with increasingly complex puzzles that test logic, pattern recognition, and spatial reasoning.",
-      features: [
-        "500+ handcrafted puzzle levels",
-        "Daily challenges and rewards",
-        "Social features and leaderboards",
-        "Hint system for difficult puzzles",
-        "Offline play support"
-      ]
-    },
+  "title": "Matty the Water Molecule",
+  "category": "Educational Game",
+  "image": "https://www.engagingeverystudent.com/wp-content/uploads/2023/05/logo.png",
+  "description": "Educational game teaching children about water molecules through engaging gameplay.",
+  "tags": ["Education", "Kids", "Science"],
+  "links": {
+    "demo": "https://www.engagingeverystudent.com/matty/",
+    "github": null
+  }
+},
     {
-      title: "Space Explorer",
-      category: "Adventure Game",
-      image: "photo-1485827404703-89b55fcc595e",
-      description: "Explore the cosmos in this immersive space adventure",
-      tags: ["Unity", "VR", "C#"],
-      detailedDescription: "Journey through the galaxy, discover new planets, and encounter alien civilizations in this epic space exploration game.",
-      features: [
-        "Virtual reality support",
-        "Procedurally generated planets",
-        "Alien species interactions",
-        "Spacecraft customization",
-        "Multiplayer exploration"
-      ]
-    },
+  "title": "AR-Ways",
+  "category": "AR App",
+  "image": "https://play-lh.googleusercontent.com/4k4E_h7Yg_lAeQj6RU3gAxuAVDHtgVQlEJUp63s9_M2HlALuVaUwZCHn5zIloYXHPA=w240-h480-rw",
+  "description": "Augmented reality app allowing users to place digital content in real-world locations.",
+  "tags": ["Augmented Reality", "AR", "Maps", "Navigation"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nextechar.armaps",
+    "github": null
+  }
+},
     {
-      title: "Kingdom Defense",
-      category: "Strategy Game",
-      image: "photo-1526374965328-7f61d4dc18c5",
-      description: "Tower defense game with medieval fantasy theme",
-      tags: ["Unity", "Mobile", "Android"],
-      detailedDescription: "Defend your kingdom against waves of enemies using strategic tower placement and magical abilities.",
-      features: [
-        "40+ unique tower types",
-        "Epic boss battles",
-        "Upgrade system",
-        "Multiple difficulty modes",
-        "Achievement system"
-      ]
-    }
+  "title": "Hide N Seek - Hunt Challenge",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/PJTYwE7xZy-TFjcOY1EpMy2rxo0NbaWlDp3j6eFGvqAVrI5S8zHtx6tKJQwfy9oUZA=w240-h480-rw",
+  "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
+  "tags": ["Puzzle", "Action", "Multiplayer"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hide.and.seek.game",
+    "github": null
+  }
+},{
+  "title": "DIY Fidget Toy Maker",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/qmJY0FSLovEBk7sNf7ELV2dVm71WMPkqZTxjETa28V6hxh5xzML33RCZB_lUVLZB35Y=w240-h480-rw",
+  "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
+  "tags": ["DIY", "Simulation", "ASMR"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.fidget.craft.asmr.toys.maker",
+    "github": null
+  }
+},
+    {
+  "title": "Pop It 3D DIY ASMR",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/OIW2E7BDnZzFpoAjIpXPEf1xkWqLiwvGzNlXcM4O7_Fbf9AfUXYdiI3eD9nmsFbqz00=w240-h480-rw",
+  "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
+  "tags": ["ASMR", "Relaxation", "Casual"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.asmr.relaxing.games",
+    "github": null
+  }
+},
+{
+  "title": "Hacker Simulator 3D",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/qmLNzK8v0rjwwJaeRAf8NPh8aKZ0K8DzFJk7MvDWDFKjUoy4r6OVau37-EeqOQ_U9g=w240-h480-rw",
+  "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
+  "tags": ["Simulation", "Hacking", "Strategy"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hacker.simulator.game",
+    "github": null
+  }
+},
+{
+  "title": "PC Simulator 3D",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/Y3LQjUpJr_PF_oJYSLzS7bZ9ylxvJmJTZTiqvZMuIMwmiXmCy7fTxceM_W-wqZ4O6os=w240-h480-rw",
+  "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
+  "tags": ["Simulation", "Education", "Tech"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pc.simulator.game",
+    "github": null
+  }
+},
+{
+  "title": "House Flipper 3D - Home Design",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/NXZuBaImiGa9hMzyaC9R7ZIv8u4X5ApN4tA_d03tZP1IUZpTk7vFtbrItV5q9ej06PI=w240-h480-rw",
+  "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
+  "tags": ["Simulation", "Puzzle", "Design"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.house.flip.real.estate.game",
+    "github": null
+  }
+},
+{
+  "title": "Clear the Parking Lot",
+  "category": "Puzzle Game",
+  "image": "https://play-lh.googleusercontent.com/rjU5CKfG2sspcgn7_3Mg0xMfbZlYO5St5IOOWvHZOnHduDRAnm2Z9PipDx1GctSi1Q=w240-h480-rw",
+  "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
+  "tags": ["Puzzle", "Strategy", "Casual"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.cemhaspolat.clearthelot",
+    "github": null
+  }
+},
+{
+  "title": "Sneaker Paint 3D",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/fOYUPn0gAixPD7x2aRvKAYBM2rB_QztI59WCDhUuXMrzWm4IlhNV1F8gxMyK6GjJHg=w240-h480-rw",
+  "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
+  "tags": ["Art", "Simulation", "Customization"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.sneaker.paint.game",
+    "github": null
+  }
+},
+{
+  "title": "Fill The Closet",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/Y7T4pMfbn9XkzNuN5C1qBUPUtBZnJ1NFOU-ME3VZGKy2J4KfMdQWE-C3Srx4UNsDAzo=w240-h480-rw",
+  "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
+  "tags": ["ASMR", "Sorting", "Relaxation"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.fill.the.closet.simulator.game",
+    "github": null
+  }
+},
+{
+  "title": "Glitter Color Adult Paint Book",
+  "category": "Game",
+  "image": "https://play-lh.googleusercontent.com/q63rOSIKSTpFtP3NK6EGCj3HDq-dKBIY29lDZleNFM8JEP1kRY-Uk2jGeYgbbXMQ-g=w240-h480-rw",
+  "description": "Color by number with glitter in this relaxing adult coloring book game.",
+  "tags": ["Coloring", "Relaxation", "ASMR"],
+  "links": {
+    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudio.adult.glitter.color.by.number.paint.coloring.book.pages",
+    "github": null
+  }
+},
+    
+
   ];
 
   const openProjectModal = (project) => {
