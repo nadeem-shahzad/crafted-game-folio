@@ -12,7 +12,7 @@ const Projects = () => {
 
   const projects = [
       {
-      title: "Galactic Acres - Web3",
+      title: "Galactic Acres Idle Clicker - Web3",
       category: "Game",
       image: "/Portfolio/Galactic-Acres.png",
       description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
