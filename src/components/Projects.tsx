@@ -29,7 +29,7 @@ const Projects = () => {
     {
   "title": "Galactic Acres - Web3",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/1RPAU5WyvIQSzFaU1C50jEhtJMSftDykC7AHqFCPtxrLk4Zcs0PXoXYgaAyaxWtkLA=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
   "tags": ["Web3", "Simulation", "Idle", "Strategy"],
   "links": {
