@@ -11,31 +11,24 @@ const Projects = () => {
   const [isAllProjectsModalOpen, setIsAllProjectsModalOpen] = useState(false);
 
   const projects = [
-    {
-      title: "Mystic Realm",
-      category: "RPG Adventure",
-      image: "photo-1461749280684-dccba630e2f6",
-      description: "An immersive fantasy RPG with stunning visuals and engaging storyline",
-      tags: ["Unity", "C#", "Mobile"],
-      detailedDescription: "Mystic Realm is an epic fantasy RPG that takes players on a journey through magical worlds filled with ancient mysteries, powerful artifacts, and legendary creatures.",
+      {
+      title: "Galactic Acres - Web3",
+      category: "Game",
+      image: "/Portfolio/Galactic-Acres.png",
+      description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
+      tags: ["Web3", "Simulation", "Idle", "Strategy"],
+      detailedDescription: "Galactic Acres is a Web3 idle simulation game where players build and manage a sanctuary for alien species, exploring the cosmos and collecting resources.",
       features: [
-        "Open-world exploration with 50+ unique locations",
-        "Character customization with 100+ items",
-        "Epic boss battles and dungeon raids",
-        "Multiplayer guild system",
-        "Real-time combat mechanics"
-      ]
-    },
-    {
-  "title": "Galactic Acres - Web3",
-  "category": "Game",
-  "image": "/Portfolio/Galactic-Acres.png",
-  "description": "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
-  "tags": ["Web3", "Simulation", "Idle", "Strategy"],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.goodgaming.galactic",
-    "github": null
-  }
+            "Web3 integration with blockchain assets",
+            "Idle gameplay mechanics for casual players",
+            "Resource management and strategy elements",
+            "Unique alien species with special abilities",
+            "Cross-platform play"
+        ],
+        links: {
+                demo: "https://play.google.com/store/apps/details?id=com.goodgaming.galactic",
+                github: null
+      }
 },
     {
   "title": "Matty the Water Molecule",
