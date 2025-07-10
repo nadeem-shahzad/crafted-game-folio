@@ -14,7 +14,7 @@ const Projects = () => {
   const projects = [
       {
       title: "Galactic Acres Idle Clicker - Web3",
-      category: "Game",
+      category: "Idle Clicker",
       image: "/lovable-uploads/galactic-acres.png",
       description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
       tags: ["Web3", "Simulation", "Idle", "Strategy"],
@@ -55,7 +55,7 @@ const Projects = () => {
 },
     {
   "title": "Hide N Seek - Hunt Challenge",
-  "category": "Game",
+  "category": "Arcade Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
   "tags": ["Puzzle", "Action", "Multiplayer"],
@@ -65,7 +65,7 @@ const Projects = () => {
   }
 },{
   "title": "DIY Fidget Toy Maker",
-  "category": "Game",
+  "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR"],
@@ -76,7 +76,7 @@ const Projects = () => {
 },
     {
   "title": "Pop It 3D DIY ASMR",
-  "category": "Game",
+  "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
   "tags": ["ASMR", "Relaxation", "Casual"],
@@ -87,7 +87,7 @@ const Projects = () => {
 },
 {
   "title": "Hacker Simulator 3D",
-  "category": "Game",
+  "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
   "tags": ["Simulation", "Hacking", "Strategy"],
@@ -98,7 +98,7 @@ const Projects = () => {
 },
 {
   "title": "PC Simulator 3D",
-  "category": "Game",
+  "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
   "tags": ["Simulation", "Education", "Tech"],
@@ -109,7 +109,7 @@ const Projects = () => {
 },
 {
   "title": "House Flipper 3D - Home Design",
-  "category": "Game",
+  "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design"],
@@ -120,7 +120,7 @@ const Projects = () => {
 },
 {
   "title": "Clear the Parking Lot",
-  "category": "Puzzle Game",
+  "category": "Causal Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
   "tags": ["Puzzle", "Strategy", "Casual"],
@@ -131,7 +131,7 @@ const Projects = () => {
 },
 {
   "title": "Sneaker Paint 3D",
-  "category": "Game",
+  "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
   "tags": ["Art", "Simulation", "Customization"],
@@ -142,7 +142,7 @@ const Projects = () => {
 },
 {
   "title": "Fill The Closet",
-  "category": "Game",
+  "category": "Casual Puzzle - Sort",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
   "tags": ["ASMR", "Sorting", "Relaxation"],
@@ -153,7 +153,7 @@ const Projects = () => {
 },
 {
   "title": "Glitter Color Adult Paint Book",
-  "category": "Game",
+  "category": "Color by Number",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Color by number with glitter in this relaxing adult coloring book game.",
   "tags": ["Coloring", "Relaxation", "ASMR"],
