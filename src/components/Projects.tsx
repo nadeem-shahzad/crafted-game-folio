@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectModal from './ProjectModal';
@@ -161,17 +160,17 @@ const Projects = () => {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudio.adult.glitter.color.by.number.paint.coloring.book.pages",
     "github": null
   }
-},
-    
-
+}
   ];
 
   const openProjectModal = (project) => {
+    console.log('Opening project modal for:', project.title);
     setSelectedProject(project);
     setIsProjectModalOpen(true);
   };
 
   const closeProjectModal = () => {
+    console.log('Closing project modal');
     setSelectedProject(null);
     setIsProjectModalOpen(false);
   };
@@ -219,12 +218,19 @@ const Projects = () => {
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           console.log('Image failed to load:', project.image);
+                          console.log('Project:', project.title);
                           (e.target as HTMLImageElement).style.display = 'none';
+                        }}
+                        onLoad={() => {
+                          console.log('Image loaded successfully:', project.image);
                         }}
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                         <button 
-                          onClick={() => openProjectModal(project)}
+                          onClick={() => {
+                            console.log('View Details clicked for:', project.title);
+                            openProjectModal(project);
+                          }}
                           className="bg-white text-gray-900 px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold"
                         >
                           View Details
@@ -267,6 +273,7 @@ const Projects = () => {
       </section>
       
       {/* Project Detail Modal */}
+      {console.log('Rendering ProjectModal with:', { selectedProject, isProjectModalOpen })}
       <ProjectModal 
         project={selectedProject}
         isOpen={isProjectModalOpen}
@@ -288,6 +295,10 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-20 h-20 object-cover rounded-lg flex-shrink-0"
+                    onError={(e) => {
+                      console.log('Small image failed to load:', project.image);
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
                   />
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
@@ -306,7 +317,10 @@ const Projects = () => {
                       ))}
                     </div>
                     <Button 
-                      onClick={() => handleViewDetails(project)}
+                      onClick={() => {
+                        console.log('View Details from modal clicked for:', project.title);
+                        handleViewDetails(project);
+                      }}
                       size="sm"
                       className="bg-orange-500 hover:bg-orange-600 text-white"
                     >
