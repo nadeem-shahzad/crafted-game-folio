@@ -34,7 +34,7 @@ const Projects = () => {
     {
   "title": "Matty the Water Molecule",
   "category": "Educational Game",
-  "image": "https://www.engagingeverystudent.com/wp-content/uploads/2023/05/logo.png",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Educational game teaching children about water molecules through engaging gameplay.",
   "tags": ["Education", "Kids", "Science"],
   "links": {
@@ -45,7 +45,7 @@ const Projects = () => {
     {
   "title": "AR-Ways",
   "category": "AR App",
-  "image": "https://play-lh.googleusercontent.com/4k4E_h7Yg_lAeQj6RU3gAxuAVDHtgVQlEJUp63s9_M2HlALuVaUwZCHn5zIloYXHPA=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Augmented reality app allowing users to place digital content in real-world locations.",
   "tags": ["Augmented Reality", "AR", "Maps", "Navigation"],
   "links": {
@@ -56,7 +56,7 @@ const Projects = () => {
     {
   "title": "Hide N Seek - Hunt Challenge",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/PJTYwE7xZy-TFjcOY1EpMy2rxo0NbaWlDp3j6eFGvqAVrI5S8zHtx6tKJQwfy9oUZA=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
   "tags": ["Puzzle", "Action", "Multiplayer"],
   "links": {
@@ -66,7 +66,7 @@ const Projects = () => {
 },{
   "title": "DIY Fidget Toy Maker",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/qmJY0FSLovEBk7sNf7ELV2dVm71WMPkqZTxjETa28V6hxh5xzML33RCZB_lUVLZB35Y=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR"],
   "links": {
@@ -77,7 +77,7 @@ const Projects = () => {
     {
   "title": "Pop It 3D DIY ASMR",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/OIW2E7BDnZzFpoAjIpXPEf1xkWqLiwvGzNlXcM4O7_Fbf9AfUXYdiI3eD9nmsFbqz00=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
   "tags": ["ASMR", "Relaxation", "Casual"],
   "links": {
@@ -88,7 +88,7 @@ const Projects = () => {
 {
   "title": "Hacker Simulator 3D",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/qmLNzK8v0rjwwJaeRAf8NPh8aKZ0K8DzFJk7MvDWDFKjUoy4r6OVau37-EeqOQ_U9g=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
   "tags": ["Simulation", "Hacking", "Strategy"],
   "links": {
@@ -99,7 +99,7 @@ const Projects = () => {
 {
   "title": "PC Simulator 3D",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/Y3LQjUpJr_PF_oJYSLzS7bZ9ylxvJmJTZTiqvZMuIMwmiXmCy7fTxceM_W-wqZ4O6os=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
   "tags": ["Simulation", "Education", "Tech"],
   "links": {
@@ -110,7 +110,7 @@ const Projects = () => {
 {
   "title": "House Flipper 3D - Home Design",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/NXZuBaImiGa9hMzyaC9R7ZIv8u4X5ApN4tA_d03tZP1IUZpTk7vFtbrItV5q9ej06PI=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design"],
   "links": {
@@ -121,7 +121,7 @@ const Projects = () => {
 {
   "title": "Clear the Parking Lot",
   "category": "Puzzle Game",
-  "image": "https://play-lh.googleusercontent.com/rjU5CKfG2sspcgn7_3Mg0xMfbZlYO5St5IOOWvHZOnHduDRAnm2Z9PipDx1GctSi1Q=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
   "tags": ["Puzzle", "Strategy", "Casual"],
   "links": {
@@ -132,7 +132,7 @@ const Projects = () => {
 {
   "title": "Sneaker Paint 3D",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/fOYUPn0gAixPD7x2aRvKAYBM2rB_QztI59WCDhUuXMrzWm4IlhNV1F8gxMyK6GjJHg=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
   "tags": ["Art", "Simulation", "Customization"],
   "links": {
@@ -143,7 +143,7 @@ const Projects = () => {
 {
   "title": "Fill The Closet",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/Y7T4pMfbn9XkzNuN5C1qBUPUtBZnJ1NFOU-ME3VZGKy2J4KfMdQWE-C3Srx4UNsDAzo=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
   "tags": ["ASMR", "Sorting", "Relaxation"],
   "links": {
@@ -154,7 +154,7 @@ const Projects = () => {
 {
   "title": "Glitter Color Adult Paint Book",
   "category": "Game",
-  "image": "https://play-lh.googleusercontent.com/q63rOSIKSTpFtP3NK6EGCj3HDq-dKBIY29lDZleNFM8JEP1kRY-Uk2jGeYgbbXMQ-g=w240-h480-rw",
+  "image": "/Portfolio/Galactic-Acres.png",
   "description": "Color by number with glitter in this relaxing adult coloring book game.",
   "tags": ["Coloring", "Relaxation", "ASMR"],
   "links": {
@@ -224,20 +224,12 @@ const Projects = () => {
                         onError={(e) => {
                           console.log('Image failed to load:', project.image);
                           console.log('Project:', project.title);
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          // Show a fallback background
-                          const parent = target.parentElement;
-                          if (parent) {
-                            parent.style.backgroundColor = '#f3f4f6';
-                            parent.innerHTML = `<div class="flex items-center justify-center h-full text-gray-500"><span>Image not available</span></div>`;
-                          }
                         }}
                         onLoad={() => {
                           console.log('Image loaded successfully:', project.image);
                         }}
                       />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                         <button 
                           onClick={(e) => {
                             e.stopPropagation();
@@ -286,7 +278,6 @@ const Projects = () => {
       </section>
       
       {/* Project Detail Modal */}
-      {console.log('Rendering ProjectModal with:', { selectedProject, isProjectModalOpen })}
       <ProjectModal 
         project={selectedProject}
         isOpen={isProjectModalOpen}
@@ -309,15 +300,6 @@ const Projects = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        console.log('Small image failed to load:', project.image);
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        const parent = target.parentElement;
-                        if (parent) {
-                          parent.innerHTML = '<span class="text-xs text-gray-500">No image</span>';
-                        }
-                      }}
                     />
                   </div>
                   <div className="flex-1">
