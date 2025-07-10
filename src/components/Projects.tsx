@@ -17,7 +17,7 @@ const Projects = () => {
       category: "Idle Clicker",
       image: "/lovable-uploads/galactic-acres.png",
       description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
-      tags: ["Web3", "Simulation", "Idle", "Strategy"],
+      tags: ["Web3", "Simulation", "Idle", "Strategy", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
       detailedDescription: "Galactic Acres is a Web3 idle simulation game where players build and manage a sanctuary for alien species, exploring the cosmos and collecting resources.",
       features: [
             "Web3 integration with blockchain assets",
@@ -36,7 +36,7 @@ const Projects = () => {
   "category": "Educational Game",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Educational game teaching children about water molecules through engaging gameplay.",
-  "tags": ["Education", "Kids", "Science"],
+  "tags": ["Education", "Kids", "Science","Unity","C#"],
   "links": {
     "demo": "https://www.engagingeverystudent.com/matty/",
     "github": null
@@ -47,7 +47,7 @@ const Projects = () => {
   "category": "AR App",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Augmented reality app allowing users to place digital content in real-world locations.",
-  "tags": ["Augmented Reality", "AR", "Maps", "Navigation"],
+  "tags": ["Augmented Reality", "AR", "Maps", "Navigation","Unity","C#"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nextechar.armaps",
     "github": null
@@ -58,7 +58,7 @@ const Projects = () => {
   "category": "Arcade Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
-  "tags": ["Puzzle", "Action", "Multiplayer"],
+  "tags": ["Puzzle", "Action", "Unity", "C#", "Firebase", "Google Play", "Game Analytics", "Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hide.and.seek.game",
     "github": null
@@ -68,7 +68,7 @@ const Projects = () => {
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
-  "tags": ["DIY", "Simulation", "ASMR"],
+  "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.fidget.craft.asmr.toys.maker",
     "github": null
@@ -79,7 +79,7 @@ const Projects = () => {
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
-  "tags": ["ASMR", "Relaxation", "Casual"],
+  "tags": ["ASMR", "Relaxation", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.asmr.relaxing.games",
     "github": null
@@ -90,7 +90,7 @@ const Projects = () => {
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
-  "tags": ["Simulation", "Hacking", "Strategy"],
+  "tags": ["Simulation", "Hacking", "Strategy","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hacker.simulator.game",
     "github": null
@@ -101,7 +101,7 @@ const Projects = () => {
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
-  "tags": ["Simulation", "Education", "Tech"],
+  "tags": ["Simulation", "Education", "Tech","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pc.simulator.game",
     "github": null
@@ -112,7 +112,7 @@ const Projects = () => {
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
-  "tags": ["Simulation", "Puzzle", "Design"],
+  "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.house.flip.real.estate.game",
     "github": null
@@ -123,7 +123,7 @@ const Projects = () => {
   "category": "Causal Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
-  "tags": ["Puzzle", "Strategy", "Casual"],
+  "tags": ["Puzzle", "Strategy", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.cemhaspolat.clearthelot",
     "github": null
@@ -134,7 +134,7 @@ const Projects = () => {
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
-  "tags": ["Art", "Simulation", "Customization"],
+  "tags": ["Art", "Simulation", "Customization","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.sneaker.paint.game",
     "github": null
@@ -145,7 +145,7 @@ const Projects = () => {
   "category": "Casual Puzzle - Sort",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
-  "tags": ["ASMR", "Sorting", "Relaxation"],
+  "tags": ["ASMR", "Sorting", "Relaxation","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.fill.the.closet.simulator.game",
     "github": null
@@ -156,7 +156,7 @@ const Projects = () => {
   "category": "Color by Number",
   "image": "/lovable-uploads/galactic-acres.png",
   "description": "Color by number with glitter in this relaxing adult coloring book game.",
-  "tags": ["Coloring", "Relaxation", "ASMR"],
+  "tags": ["Coloring", "Relaxation", "ASMR","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudio.adult.glitter.color.by.number.paint.coloring.book.pages",
     "github": null
