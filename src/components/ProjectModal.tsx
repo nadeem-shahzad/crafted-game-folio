@@ -26,14 +26,30 @@ interface ProjectModalProps {
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
   if (!isOpen || !project) return null;
 
+  const handleDemoClick = () => {
+    if (project.links?.demo) {
+      window.open(project.links.demo, '_blank');
+    }
+  };
+
+  const handleSourceClick = () => {
+    if (project.links?.github) {
+      window.open(project.links.github, '_blank');
+    }
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div className="bg-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
           <img
-            src={`https://images.unsplash.com/${project.image}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80`}
+            src={project.image}
             alt={project.title}
             className="w-full h-64 object-cover"
+            onError={(e) => {
+              console.log('Modal image failed to load:', project.image);
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
           />
           <button
             onClick={onClose}
@@ -86,12 +102,32 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
               </div>
               
               <div className="space-y-3">
-                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
-                  Play Demo
-                </button>
-                <button className="w-full border border-muted-foreground text-muted-foreground hover:bg-muted py-3 px-6 rounded-lg font-semibold transition-colors">
-                  View Source Code
-                </button>
+                {project.links?.demo && (
+                  <button 
+                    onClick={handleDemoClick}
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+                  >
+                    Play Demo
+                  </button>
+                )}
+                {project.links?.github && (
+                  <button 
+                    onClick={handleSourceClick}
+                    className="w-full border border-muted-foreground text-muted-foreground hover:bg-muted py-3 px-6 rounded-lg font-semibold transition-colors"
+                  >
+                    View Source Code
+                  </button>
+                )}
+                {!project.links?.demo && !project.links?.github && (
+                  <>
+                    <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors opacity-50 cursor-not-allowed">
+                      Demo Not Available
+                    </button>
+                    <button className="w-full border border-muted-foreground text-muted-foreground hover:bg-muted py-3 px-6 rounded-lg font-semibold transition-colors opacity-50 cursor-not-allowed">
+                      Source Code Private
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>

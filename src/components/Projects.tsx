@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectModal from './ProjectModal';
@@ -209,17 +210,28 @@ const Projects = () => {
                 {projects.map((project, index) => (
                   <div
                     key={index}
-                    className="flex-none w-80 bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border"
+                    className="flex-none w-80 bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border cursor-pointer"
+                    onClick={() => {
+                      console.log('Card clicked for:', project.title);
+                      openProjectModal(project);
+                    }}
                   >
-                    <div className="relative overflow-hidden">
+                    <div className="relative overflow-hidden h-48">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           console.log('Image failed to load:', project.image);
                           console.log('Project:', project.title);
-                          (e.target as HTMLImageElement).style.display = 'none';
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          // Show a fallback background
+                          const parent = target.parentElement;
+                          if (parent) {
+                            parent.style.backgroundColor = '#f3f4f6';
+                            parent.innerHTML = `<div class="flex items-center justify-center h-full text-gray-500"><span>Image not available</span></div>`;
+                          }
                         }}
                         onLoad={() => {
                           console.log('Image loaded successfully:', project.image);
@@ -227,11 +239,12 @@ const Projects = () => {
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                         <button 
-                          onClick={() => {
+                          onClick={(e) => {
+                            e.stopPropagation();
                             console.log('View Details clicked for:', project.title);
                             openProjectModal(project);
                           }}
-                          className="bg-white text-gray-900 px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold"
+                          className="bg-white text-gray-900 px-6 py-3 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-semibold transform scale-95 group-hover:scale-100 shadow-lg"
                         >
                           View Details
                         </button>
@@ -291,15 +304,22 @@ const Projects = () => {
             <div className="space-y-6">
               {projects.map((project, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 transition-colors">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-20 h-20 object-cover rounded-lg flex-shrink-0"
-                    onError={(e) => {
-                      console.log('Small image failed to load:', project.image);
-                      (e.target as HTMLImageElement).style.display = 'none';
-                    }}
-                  />
+                  <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Small image failed to load:', project.image);
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.innerHTML = '<span class="text-xs text-gray-500">No image</span>';
+                        }
+                      }}
+                    />
+                  </div>
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                       <h3 className="text-lg font-semibold text-card-foreground">{project.title}</h3>
