@@ -6,6 +6,7 @@ interface Project {
   title: string;
   category: string;
   image: string;
+  projectIcon: string;
   description: string;
   tags: string[];
   detailedDescription?: string;

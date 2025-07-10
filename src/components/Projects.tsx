@@ -15,7 +15,8 @@ const Projects = () => {
       {
       title: "Galactic Acres Idle Clicker - Web3",
       category: "Idle Clicker",
-      image: "/lovable-uploads/galactic-acres.png",
+      image: "/lovable-uploads/galactic-acres.png", 
+        projectIcon: "/lovable-uploads/galactic-acres-icon.png",
       description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
       tags: ["Web3", "Simulation", "Idle", "Strategy", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
       detailedDescription: "Galactic Acres is a Web3 idle simulation game where players build and manage a sanctuary for alien species, exploring the cosmos and collecting resources.",
@@ -35,6 +36,7 @@ const Projects = () => {
   "title": "Matty the Water Molecule",
   "category": "Educational Game",
   "image": "/lovable-uploads/galactic-acres.png",
+      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Educational game teaching children about water molecules through engaging gameplay.",
   "tags": ["Education", "Kids", "Science","Unity","C#"],
   "links": {
@@ -46,6 +48,7 @@ const Projects = () => {
   "title": "AR-Ways",
   "category": "AR App",
   "image": "/lovable-uploads/galactic-acres.png",
+      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Augmented reality app allowing users to place digital content in real-world locations.",
   "tags": ["Augmented Reality", "AR", "Maps", "Navigation","Unity","C#"],
   "links": {
@@ -57,6 +60,7 @@ const Projects = () => {
   "title": "Hide N Seek - Hunt Challenge",
   "category": "Arcade Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
+      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
   "tags": ["Puzzle", "Action", "Unity", "C#", "Firebase", "Google Play", "Game Analytics", "Monetization"],
   "links": {
@@ -67,6 +71,7 @@ const Projects = () => {
   "title": "DIY Fidget Toy Maker",
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -78,6 +83,7 @@ const Projects = () => {
   "title": "Pop It 3D DIY ASMR",
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
   "tags": ["ASMR", "Relaxation", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -89,6 +95,7 @@ const Projects = () => {
   "title": "Hacker Simulator 3D",
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
   "tags": ["Simulation", "Hacking", "Strategy","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -100,6 +107,7 @@ const Projects = () => {
   "title": "PC Simulator 3D",
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
   "tags": ["Simulation", "Education", "Tech","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -111,6 +119,7 @@ const Projects = () => {
   "title": "House Flipper 3D - Home Design",
   "category": "Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -122,6 +131,7 @@ const Projects = () => {
   "title": "Clear the Parking Lot",
   "category": "Causal Puzzle",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
   "tags": ["Puzzle", "Strategy", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -133,6 +143,7 @@ const Projects = () => {
   "title": "Sneaker Paint 3D",
   "category": "Casual Simulation",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
   "tags": ["Art", "Simulation", "Customization","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -144,6 +155,7 @@ const Projects = () => {
   "title": "Fill The Closet",
   "category": "Casual Puzzle - Sort",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
   "tags": ["ASMR", "Sorting", "Relaxation","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -155,6 +167,7 @@ const Projects = () => {
   "title": "Glitter Color Adult Paint Book",
   "category": "Color by Number",
   "image": "/lovable-uploads/galactic-acres.png",
+  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
   "description": "Color by number with glitter in this relaxing adult coloring book game.",
   "tags": ["Coloring", "Relaxation", "ASMR","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -218,15 +231,15 @@ const Projects = () => {
                   >
                     <div className="relative overflow-hidden h-48">
                       <img
-                        src={project.image}
+                        src={project.projectIcon}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
-                          console.log('Image failed to load:', project.image);
+                          console.log('Image failed to load:', project.projectIcon);
                           console.log('Project:', project.title);
                         }}
                         onLoad={() => {
-                          console.log('Image loaded successfully:', project.image);
+                          console.log('Image loaded successfully:', project.projectIcon);
                         }}
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
@@ -297,7 +310,7 @@ const Projects = () => {
                 <div key={index} className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 transition-colors">
                   <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <img
-                      src={project.image}
+                      src={project.projectIcon}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
