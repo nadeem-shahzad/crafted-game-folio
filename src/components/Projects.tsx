@@ -219,7 +219,7 @@ const Projects = () => {
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           console.log('Image failed to load:', project.image);
-                          e.target.style.display = 'none';
+                          (e.target as HTMLImageElement).style.display = 'none';
                         }}
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
