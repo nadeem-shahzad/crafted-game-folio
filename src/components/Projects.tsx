@@ -70,8 +70,8 @@ const Projects = () => {
 },{
   "title": "DIY Fidget Toy Maker",
   "category": "Casual Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/toymaker.png",
+      projectIcon: "/lovable-uploads/toymaker-icon.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
