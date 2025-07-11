@@ -93,7 +93,7 @@ const Hero = () => {
                 <img
                   src="/lovable-uploads/nadeem.png"
                   alt="Nadeem Shahzad - Game Developer"
-                  className="w-122 h-122 lg:w-133 lg:h-133 rounded-full object-cover border-4 border-background shadow-2xl"
+                  className="w-72 h-72 lg:w-88 lg:h-88 rounded-full object-cover border-4 border-background shadow-2xl"
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
