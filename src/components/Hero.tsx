@@ -30,10 +30,10 @@ const Hero = () => {
   };
 
   const openGithub = () => window.open("https://github.com/nadeem-shahzad", "_blank");
-  const openLinkedin = () => window.open("https://linkedin.com/in/nadeem-shahzad", "_blank");
-  const openUpwork = () => window.open("https://www.upwork.com/freelancers/~nadeem-shahzad", "_blank");
-  const openFacebook = () => window.open("https://facebook.com/nadeem.shahzad", "_blank");
-  const openInstagram = () => window.open("https://instagram.com/nadeem.shahzad", "_blank");
+  const openLinkedin = () => window.open("https://www.linkedin.com/in/nadeem-shahzad-271637136/", "_blank");
+  const openUpwork = () => window.open("https://www.upwork.com/freelancers/nadeemshahzad", "_blank");
+  const openFacebook = () => window.open("https://www.facebook.com/ziin7432", "_blank");
+  const openInstagram = () => window.open("https://www.instagram.com/deem_7432/", "_blank");
 
   return (
     <>
