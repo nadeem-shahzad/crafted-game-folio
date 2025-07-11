@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Github, Linkedin } from "lucide-react";
+import { Download, Github, Linkedin, Facebook, Instagram, Upwork } from "lucide-react";
 import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = () => {
@@ -14,12 +14,18 @@ const Hero = () => {
   const downloadCV = () => {
     // Create a temporary link to download CV
     const link = document.createElement('a');
-    link.href = '/cv-alex-chen.pdf'; // You can replace this with actual CV file path
-    link.download = 'Alex-Chen-CV.pdf';
+    link.href = '/cv-nadeem-shahzad.pdf'; // You can replace this with actual CV file path
+    link.download = 'Nadeem Shahzad.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+
+  const openGithub = () => window.open("https://github.com/nadeem-shahzad", "_blank");
+  const openLinkedin = () => window.open("https://linkedin.com/in/nadeem-shahzad", "_blank");
+  const openUpwork = () => window.open("https://www.upwork.com/freelancers/~nadeem-shahzad", "_blank");
+  const openFacebook = () => window.open("https://facebook.com/nadeem.shahzad", "_blank");
+  const openInstagram = () => window.open("https://instagram.com/nadeem.shahzad", "_blank");
 
   return (
     <>
@@ -56,11 +62,20 @@ const Hero = () => {
               </Button>
             </div>
             <div className="flex gap-4 justify-center lg:justify-start">
-              <Button variant="outline" size="icon" className="rounded-full">
+              <Button variant="outline" size="icon" className="rounded-full" onClick={openGithub}>
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon" className="rounded-full">
+              <Button variant="outline" size="icon" className="rounded-full" onClick={openLinkedin}>
                 <Linkedin className="h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="icon" className="rounded-full" onClick={openUpwork}>
+                <Upwork className="h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="icon" className="rounded-full" onClick={openFacebook}>
+                <Facebook className="h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="icon" className="rounded-full" onClick={openInstagram}>
+                <Instagram className="h-5 w-5" />
               </Button>
             </div>
           </div>
