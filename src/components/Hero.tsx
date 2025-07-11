@@ -89,7 +89,7 @@ const Hero = () => {
           </div>
           <div className="flex-1 flex justify-center">
             <div className="relative">
-              <div className="w-30 h-30 lg:w-46 lg:h-46 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
                 <img
                   src="/lovable-uploads/nadeem.png"
                   alt="Nadeem Shahzad - Game Developer"
