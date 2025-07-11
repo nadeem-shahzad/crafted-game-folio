@@ -59,8 +59,8 @@ const Projects = () => {
     {
   "title": "Hide N Seek - Hunt Challenge",
   "category": "Arcade Puzzle",
-  "image": "/lovable-uploads/galactic-acres.png",
-      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/hidenseek.png",
+      projectIcon: "/lovable-uploads/hidenseek-icon.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
   "tags": ["Puzzle", "Action", "Unity", "C#", "Firebase", "Google Play", "Game Analytics", "Monetization"],
   "links": {
