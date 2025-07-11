@@ -47,8 +47,8 @@ const Projects = () => {
     {
   "title": "AR-Ways",
   "category": "AR App",
-  "image": "/lovable-uploads/galactic-acres.png",
-      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/arway.png",
+      projectIcon: "/lovable-uploads/arway-icon.png",
   "description": "Augmented reality app allowing users to place digital content in real-world locations.",
   "tags": ["Augmented Reality", "AR", "Maps", "Navigation","Unity","C#"],
   "links": {
