@@ -93,9 +93,9 @@ const Services = () => {
                     ))}
                   </ul>
                   <div className="pt-4 border-t">
-                    <p className="text-lg font-semibold text-orange-600 dark:text-orange-400 mb-4">
-                      {service.price}
-                    </p>
+                    {/*<p className="text-lg font-semibold text-orange-600 dark:text-orange-400 mb-4">*/}
+                    {/*  {service.price}*/}
+                    {/*</p>*/}
                     <Button 
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white"
                       onClick={scrollToContact}
