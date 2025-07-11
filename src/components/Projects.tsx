@@ -35,8 +35,8 @@ const Projects = () => {
     {
   "title": "Matty the Water Molecule",
   "category": "Educational Game",
-  "image": "/lovable-uploads/galactic-acres.png",
-      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/matty.png",
+      projectIcon: "/lovable-uploads/matty-icon.png",
   "description": "Educational game teaching children about water molecules through engaging gameplay.",
   "tags": ["Education", "Kids", "Science","Unity","C#"],
   "links": {
