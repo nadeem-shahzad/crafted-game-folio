@@ -39,6 +39,13 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/trace-icon.png",
       "description": "A location-based social media app for sharing geo-tagged videos and exploring the world around you.",
       "tags": ["Social", "Geo-Location", "iOS", "Firebase", "Swift", "SwiftUI","Unity","C#"],
+      features: [
+        "Share geo-tagged videos",
+        "Explore nearby content",
+        "Real-time messaging",
+        "User profiles and privacy controls",
+        "Push notifications"
+      ],
       "links": {
         "demo": "https://apps.apple.com/us/app/trace-leave-a-trace/id6450400543",
         "github": null
@@ -51,7 +58,14 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/matty-icon.png",
   "description": "Educational game teaching children about water molecules through engaging gameplay.",
   "tags": ["Education", "Kids", "Science","Unity","C#"],
-  "links": {
+      features: [
+        "Interactive water molecule puzzles",
+        "Fun facts about science",
+        "Kid-friendly graphics",
+        "Progress tracking",
+        "Mini-games for learning"
+      ],
+      "links": {
     "demo": "https://www.engagingeverystudent.com/matty/",
     "github": null
   }
@@ -63,7 +77,14 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/arway-icon.png",
   "description": "Augmented reality app allowing users to place digital content in real-world locations.",
   "tags": ["Augmented Reality", "AR", "Maps", "Navigation","Unity","C#"],
-  "links": {
+      features: [
+        "Place digital objects in AR",
+        "Real-world location mapping",
+        "Navigation assistance",
+        "Customizable AR content",
+        "Cross-device support"
+      ],
+      "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nextechar.armaps",
     "github": null
   }
@@ -75,7 +96,14 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/hidenseek-icon.png",
   "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
   "tags": ["Puzzle", "Action", "Unity", "C#", "Firebase", "Google Play", "Game Analytics", "Monetization"],
-  "links": {
+      features: [
+        "Object transformation mechanics",
+        "Monster hunter mode",
+        "Multiple levels and challenges",
+        "Leaderboards",
+        "In-game rewards"
+      ],
+      "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hide.and.seek.game",
     "github": null
   }
@@ -86,6 +114,13 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/toymaker-icon.png",
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
+      features: [
+        "3D fidget toy crafting",
+        "ASMR sound effects",
+        "Customization options",
+        "Relaxing gameplay",
+        "Share creations"
+      ],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.dobroapps.popit.maker",
     "github": null
@@ -98,7 +133,14 @@ const Projects = () => {
       projectIcon: "/lovable-uploads/popit-icon.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
   "tags": ["ASMR", "Relaxation", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  "links": {
+      features: [
+        "3D pop it toys",
+        "Satisfying ASMR audio",
+        "Stress relief gameplay",
+        "Unlockable designs",
+        "Daily challenges"
+      ],
+      "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.pop.it.asmr.relaxing.games",
     "github": null
   }
@@ -110,6 +152,13 @@ const Projects = () => {
   projectIcon: "/lovable-uploads/hacker-icon.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
   "tags": ["Simulation", "Hacking", "Strategy","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
+  features: [
+    "Realistic hacking missions",
+    "Stealth gameplay",
+    "Upgradeable skills",
+    "Multiple hacking tools",
+    "Story mode"
+  ],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hacker.simulator.game",
     "github": null
@@ -122,6 +171,13 @@ const Projects = () => {
   projectIcon: "/lovable-uploads/pcsim-icon.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
   "tags": ["Simulation", "Education", "Tech","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
+  features: [
+    "Realistic PC building",
+    "Component selection",
+    "Software installation",
+    "Troubleshooting scenarios",
+    "Tutorial mode"
+  ],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pc.simulator.game",
     "github": null
@@ -134,6 +190,13 @@ const Projects = () => {
   projectIcon: "/lovable-uploads/houseflipper-icon.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
+  features: [
+    "Home renovation gameplay",
+    "Interior design options",
+    "Puzzle-based challenges",
+    "Property upgrades",
+    "Sell renovated homes"
+  ],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.house.flip.real.estate.game",
     "github": null
@@ -145,7 +208,14 @@ const Projects = () => {
   projectIcon: "/lovable-uploads/sneakerart-icon.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
   "tags": ["Art", "Simulation", "Customization","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  "links": {
+      features: [
+        "Sneaker painting tools",
+        "Custom design gallery",
+        "Unlockable colors and patterns",
+        "Share designs",
+        "Creative challenges"
+      ],
+      "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.sneaker.paint.game",
     "github": null
   }
@@ -157,6 +227,13 @@ const Projects = () => {
   projectIcon: "/lovable-uploads/fillthecloset-icon.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
   "tags": ["ASMR", "Sorting", "Relaxation","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
+  features: [
+    "Clothes sorting puzzles",
+    "ASMR sound effects",
+    "Organize by color and type",
+    "Progressive difficulty",
+    "Unlockable closet themes"
+  ],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargames.fill.the.closet.organizer3d",
     "github": null
