@@ -33,6 +33,18 @@ const Projects = () => {
       }
 },
     {
+      "title": "Trace | Leave A Trace",
+      "category": "Messaging App",
+      image: "/lovable-uploads/trace.png",
+      projectIcon: "/lovable-uploads/trace-icon.png",
+      "description": "A location-based social media app for sharing geo-tagged videos and exploring the world around you.",
+      "tags": ["Social", "Geo-Location", "iOS", "Firebase", "Swift", "SwiftUI","Unity","C#"],
+      "links": {
+        "demo": "https://apps.apple.com/us/app/trace-leave-a-trace/id6450400543",
+        "github": null
+      }
+    },
+    {
   "title": "Matty the Water Molecule",
   "category": "Educational Game",
   "image": "/lovable-uploads/matty.png",
