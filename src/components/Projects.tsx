@@ -75,27 +75,27 @@ const Projects = () => {
   "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
   "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.fidget.craft.asmr.toys.maker",
+    "demo": "https://play.google.com/store/apps/details?id=com.dobroapps.popit.maker",
     "github": null
   }
 },
     {
   "title": "Pop It 3D DIY ASMR",
   "category": "Casual Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-      projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/popit.png",
+      projectIcon: "/lovable-uploads/popit-icon.png",
   "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
   "tags": ["ASMR", "Relaxation", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pop.it.asmr.relaxing.games",
+    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.pop.it.asmr.relaxing.games",
     "github": null
   }
 },
 {
   "title": "Hacker Simulator 3D",
   "category": "Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/hacker.png",
+  projectIcon: "/lovable-uploads/hacker-icon.png",
   "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
   "tags": ["Simulation", "Hacking", "Strategy","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -106,8 +106,8 @@ const Projects = () => {
 {
   "title": "PC Simulator 3D",
   "category": "Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/pcsim.png",
+  projectIcon: "/lovable-uploads/pcsim-icon.png",
   "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
   "tags": ["Simulation", "Education", "Tech","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -118,32 +118,19 @@ const Projects = () => {
 {
   "title": "House Flipper 3D - Home Design",
   "category": "Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/housefillper.png",
+  projectIcon: "/lovable-uploads/housefillper-icon.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
     "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.house.flip.real.estate.game",
     "github": null
   }
-},
-{
-  "title": "Clear the Parking Lot",
-  "category": "Causal Puzzle",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
-  "description": "Use strategy to navigate your car out of a traffic jam without collisions.",
-  "tags": ["Puzzle", "Strategy", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.cemhaspolat.clearthelot",
-    "github": null
-  }
-},
-{
+}, {
   "title": "Sneaker Paint 3D",
   "category": "Casual Simulation",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/sneakerart.png",
+  projectIcon: "/lovable-uploads/sneakerart-icon.png",
   "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
   "tags": ["Art", "Simulation", "Customization","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
@@ -154,27 +141,15 @@ const Projects = () => {
 {
   "title": "Fill The Closet",
   "category": "Casual Puzzle - Sort",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
+  "image": "/lovable-uploads/fillthecloset.png",
+  projectIcon: "/lovable-uploads/fillthecloset-icon.png",
   "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
   "tags": ["ASMR", "Sorting", "Relaxation","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.fill.the.closet.simulator.game",
+    "demo": "https://play.google.com/store/apps/details?id=com.kunhargames.fill.the.closet.organizer3d",
     "github": null
   }
 },
-{
-  "title": "Glitter Color Adult Paint Book",
-  "category": "Color by Number",
-  "image": "/lovable-uploads/galactic-acres.png",
-  projectIcon: "/lovable-uploads/galactic-acres-icon.png",
-  "description": "Color by number with glitter in this relaxing adult coloring book game.",
-  "tags": ["Coloring", "Relaxation", "ASMR","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudio.adult.glitter.color.by.number.paint.coloring.book.pages",
-    "github": null
-  }
-}
   ];
 
   const openProjectModal = (project) => {
