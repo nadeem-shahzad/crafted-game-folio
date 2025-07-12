@@ -1,5 +1,9 @@
 
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const Testimonials = () => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+  
   const testimonials = [
     {
       name: "Saleem Basit",
@@ -22,9 +26,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-background" ref={ref}>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
           <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             💬 Testimonials
           </div>
@@ -38,7 +44,12 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border"
+              className={`bg-card p-6 rounded-2xl hover:shadow-lg transition-all duration-700 hover:-translate-y-1 border ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ 
+                transitionDelay: isVisible ? `${index * 150}ms` : '0ms' 
+              }}
             >
               <div className="flex items-center mb-4">
                 <img

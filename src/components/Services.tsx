@@ -1,9 +1,11 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, Smartphone, Code, Palette, Zap, Users } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Services = () => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+  
   const services = [
     {
       icon: Gamepad2,
@@ -57,9 +59,11 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
+    <section id="services" className="py-20 px-4 bg-muted/30 dark:bg-muted/20" ref={ref}>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
           <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             🛠️ Services
           </div>
@@ -73,7 +77,15 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <Card 
+                key={index} 
+                className={`relative overflow-hidden group hover:shadow-lg transition-all duration-700 hover:-translate-y-2 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                }`}
+                style={{ 
+                  transitionDelay: isVisible ? `${index * 100}ms` : '0ms' 
+                }}
+              >
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
@@ -93,9 +105,6 @@ const Services = () => {
                     ))}
                   </ul>
                   <div className="pt-4 border-t">
-                    {/*<p className="text-lg font-semibold text-orange-600 dark:text-orange-400 mb-4">*/}
-                    {/*  {service.price}*/}
-                    {/*</p>*/}
                     <Button 
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white"
                       onClick={scrollToContact}
@@ -109,7 +118,9 @@ const Services = () => {
           })}
         </div>
 
-        <div className="text-center mt-12">
+        <div className={`text-center mt-12 transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`} style={{ transitionDelay: '600ms' }}>
           <p className="text-muted-foreground mb-6">
             Need a custom solution? Let's discuss your specific requirements.
           </p>
