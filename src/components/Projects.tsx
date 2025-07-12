@@ -118,8 +118,8 @@ const Projects = () => {
 {
   "title": "House Flipper 3D - Home Design",
   "category": "Simulation",
-  "image": "/lovable-uploads/housefilpper.png",
-  projectIcon: "/lovable-uploads/housefilpper-icon.png",
+  "image": "/lovable-uploads/houseflipper.png",
+  projectIcon: "/lovable-uploads/houseflipper-icon.png",
   "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
   "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
   "links": {
