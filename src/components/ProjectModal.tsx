@@ -1,9 +1,22 @@
 
 import React from 'react';
 import { X } from 'lucide-react';
-import { Tables } from '@/integrations/supabase/types';
 
-type Project = Tables<'projects'>;
+interface Project {
+  title: string;
+  category: string;
+  image: string;
+  projectIcon: string;
+  description: string;
+  tags: string[];
+  detailedDescription?: string;
+  features?: string[];
+  techStack?: string[];
+  links?: {
+    demo?: string;
+    github?: string;
+  };
+}
 
 interface ProjectModalProps {
   project: Project | null;
@@ -15,14 +28,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
   if (!isOpen || !project) return null;
 
   const handleDemoClick = () => {
-    if (project.demo_url) {
-      window.open(project.demo_url, '_blank');
+    if (project.links?.demo) {
+      window.open(project.links.demo, '_blank');
     }
   };
 
   const handleSourceClick = () => {
-    if (project.github_url) {
-      window.open(project.github_url, '_blank');
+    if (project.links?.github) {
+      window.open(project.links.github, '_blank');
     }
   };
 
@@ -31,11 +44,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
       <div className="bg-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
           <img
-            src={project.image_url || project.project_icon_url || '/placeholder.svg'}
+            src={project.image}
             alt={project.title}
             className="w-full h-64 object-cover"
             onError={(e) => {
-              console.log('Modal image failed to load:', project.image_url);
+              console.log('Modal image failed to load:', project.image);
               (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
@@ -56,12 +69,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4">Project Details</h3>
               <p className="text-muted-foreground mb-6">
-                {project.detailed_description || "This project showcases advanced development techniques and engaging gameplay mechanics that provide hours of entertainment for players worldwide."}
+                {project.detailedDescription || "This game showcases advanced development techniques and engaging gameplay mechanics that provide hours of entertainment for players worldwide."}
               </p>
               
               <h4 className="font-semibold text-card-foreground mb-3">Key Features</h4>
               <ul className="space-y-2 text-muted-foreground">
-                {(project.features && project.features.length > 0 ? project.features : [
+                {(project.features || [
                   "Cross-platform compatibility",
                   "Engaging storyline and characters",
                   "Advanced graphics and animations",
@@ -79,7 +92,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div>
               <h4 className="font-semibold text-card-foreground mb-3">Technologies Used</h4>
               <div className="flex flex-wrap gap-2 mb-6">
-                {(project.tags || []).map((tech, index) => (
+                {(project.techStack || project.tags).map((tech, index) => (
                   <span
                     key={index}
                     className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
@@ -90,15 +103,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
               </div>
               
               <div className="space-y-3">
-                {project.demo_url && (
+                {project.links?.demo && (
                   <button 
                     onClick={handleDemoClick}
                     className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
                   >
-                    View Demo
+                    Play Demo
                   </button>
                 )}
-                {project.github_url && (
+                {project.links?.github && (
                   <button 
                     onClick={handleSourceClick}
                     className="w-full border border-muted-foreground text-muted-foreground hover:bg-muted py-3 px-6 rounded-lg font-semibold transition-colors"
@@ -106,7 +119,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     View Source Code
                   </button>
                 )}
-                {!project.demo_url && !project.github_url && (
+                {!project.links?.demo && !project.links?.github && (
                   <>
                     <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors opacity-50 cursor-not-allowed">
                       Demo Not Available
