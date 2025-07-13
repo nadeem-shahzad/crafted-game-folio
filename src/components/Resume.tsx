@@ -1,8 +1,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, GraduationCap, Award, Building } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Resume = () => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+  
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
@@ -47,9 +50,15 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className="py-20 px-4 bg-background">
+    <section 
+      id="resume" 
+      className="py-20 px-4 bg-background"
+      ref={ref}
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
           <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             📄 Resume
           </div>
@@ -62,14 +71,26 @@ const Resume = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Education */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
+            <div className={`flex items-center gap-3 mb-6 transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`} style={{ transitionDelay: isVisible ? '200ms' : '0ms' }}>
               <div className="p-2 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
                 <GraduationCap className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold text-foreground">Education</h3>
             </div>
             {education.map((edu, index) => (
-              <Card key={index} className="border-l-4 border-l-orange-500">
+              <Card 
+                key={index} 
+                className={`border-l-4 border-l-orange-500 hover:scale-105 hover:shadow-lg transition-all duration-500 ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ 
+                  transitionDelay: isVisible ? `${300 + index * 150}ms` : '0ms' 
+                }}
+              >
                 <CardHeader className="pb-3">
                   <CardTitle className="text-lg">{edu.degree}</CardTitle>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -87,14 +108,26 @@ const Resume = () => {
 
           {/* Experience */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
+            <div className={`flex items-center gap-3 mb-6 transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`} style={{ transitionDelay: isVisible ? '400ms' : '0ms' }}>
               <div className="p-2 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
                 <Building className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold text-foreground">Experience</h3>
             </div>
             {experience.map((exp, index) => (
-              <Card key={index} className="border-l-4 border-l-orange-500">
+              <Card 
+                key={index} 
+                className={`border-l-4 border-l-orange-500 hover:scale-105 hover:shadow-lg transition-all duration-500 ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ 
+                  transitionDelay: isVisible ? `${500 + index * 150}ms` : '0ms' 
+                }}
+              >
                 <CardHeader className="pb-3">
                   <CardTitle className="text-lg">{exp.position}</CardTitle>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -112,14 +145,26 @@ const Resume = () => {
 
            {/* Certifications */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
+            <div className={`flex items-center gap-3 mb-6 transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`} style={{ transitionDelay: isVisible ? '600ms' : '0ms' }}>
               <div className="p-2 bg-orange-100 dark:bg-orange-900/50 rounded-lg">
                 <Award className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
             </div>
             {certifications.map((cert, index) => (
-              <Card key={index} className="border-l-4 border-l-orange-500">
+              <Card 
+                key={index} 
+                className={`border-l-4 border-l-orange-500 hover:scale-105 hover:shadow-lg transition-all duration-500 ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ 
+                  transitionDelay: isVisible ? `${700 + index * 150}ms` : '0ms' 
+                }}
+              >
                 <CardHeader className="pb-3">
                   <CardTitle className="text-lg">{cert.name}</CardTitle>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -133,7 +178,6 @@ const Resume = () => {
               </Card>
             ))}
           </div>
-          
         </div>
       </div>
     </section>

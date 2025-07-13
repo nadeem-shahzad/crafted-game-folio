@@ -1,12 +1,13 @@
-
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectModal from './ProjectModal';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { ScrollArea } from './ui/scroll-area';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Projects = () => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
   const [selectedProject, setSelectedProject] = useState(null);
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [isAllProjectsModalOpen, setIsAllProjectsModalOpen] = useState(false);
@@ -268,9 +269,15 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
+      <section 
+        id="projects" 
+        className="py-20 px-4 bg-muted/30 dark:bg-muted/20"
+        ref={ref}
+      >
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             <div className="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
               🎮 My Work
             </div>
@@ -287,7 +294,14 @@ const Projects = () => {
                 {projects.map((project, index) => (
                   <div
                     key={index}
-                    className="flex-none w-80 bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border cursor-pointer"
+                    className={`flex-none w-80 bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 hover:scale-105 group border cursor-pointer ${
+                      isVisible 
+                        ? 'opacity-100 translate-y-0 scale-100' 
+                        : 'opacity-0 translate-y-8 scale-95'
+                    }`}
+                    style={{ 
+                      transitionDelay: isVisible ? `${index * 100}ms` : '0ms' 
+                    }}
                     onClick={() => {
                       console.log('Card clicked for:', project.title);
                       openProjectModal(project);
@@ -313,7 +327,7 @@ const Projects = () => {
                             console.log('View Details clicked for:', project.title);
                             openProjectModal(project);
                           }}
-                          className="bg-white text-gray-900 px-6 py-3 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-semibold transform scale-95 group-hover:scale-100 shadow-lg"
+                          className="bg-white text-gray-900 px-6 py-3 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-semibold transform scale-90 group-hover:scale-100 shadow-lg"
                         >
                           View Details
                         </button>
@@ -343,10 +357,12 @@ const Projects = () => {
           </div>
 
           {/* View All Projects Button */}
-          <div className="text-center mt-12">
+          <div className={`text-center mt-12 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`} style={{ transitionDelay: isVisible ? '800ms' : '0ms' }}>
             <Button 
               onClick={openAllProjectsModal}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:scale-105 transition-all duration-300"
             >
               View All Projects
             </Button>
@@ -371,7 +387,11 @@ const Projects = () => {
           <ScrollArea className="h-[70vh] pr-4">
             <div className="space-y-6">
               {projects.map((project, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 transition-colors">
+                <div 
+                  key={index} 
+                  className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                  onClick={() => handleViewDetails(project)}
+                >
                   <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <img
                       src={project.projectIcon}
@@ -396,12 +416,13 @@ const Projects = () => {
                       ))}
                     </div>
                     <Button 
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation();
                         console.log('View Details from modal clicked for:', project.title);
                         handleViewDetails(project);
                       }}
                       size="sm"
-                      className="bg-orange-500 hover:bg-orange-600 text-white"
+                      className="bg-orange-500 hover:bg-orange-600 text-white hover:scale-105 transition-all duration-200"
                     >
                       View Details
                     </Button>
@@ -415,7 +436,7 @@ const Projects = () => {
             <Button 
               onClick={closeAllProjectsModal}
               variant="outline"
-              className="px-6 py-2"
+              className="px-6 py-2 hover:scale-105 transition-all duration-200"
             >
               Close
             </Button>
