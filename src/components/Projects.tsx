@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import ProjectModal from './ProjectModal';
@@ -5,244 +6,19 @@ import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { ScrollArea } from './ui/scroll-area';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useProjects } from '@/hooks/useProjects';
+import { Tables } from '@/integrations/supabase/types';
+
+type Project = Tables<'projects'>;
 
 const Projects = () => {
   const { ref, isVisible } = useScrollAnimation(0.1);
-  const [selectedProject, setSelectedProject] = useState(null);
+  const { projects, loading, error } = useProjects();
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [isAllProjectsModalOpen, setIsAllProjectsModalOpen] = useState(false);
 
-  const projects = [
-      {
-      title: "Galactic Acres Idle Clicker - Web3",
-      category: "Idle Clicker",
-      image: "/lovable-uploads/galactic-acres.png", 
-        projectIcon: "/lovable-uploads/galactic-acres-icon.png",
-      description: "A Web3 idle simulation game set in space where players manage a sanctuary of alien species.",
-      tags: ["Web3", "Simulation", "Idle", "Strategy", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-      detailedDescription: "Galactic Acres is a Web3 idle simulation game where players build and manage a sanctuary for alien species, exploring the cosmos and collecting resources.",
-      features: [
-            "Web3 integration with blockchain assets",
-            "Idle gameplay mechanics for casual players",
-            "Resource management and strategy elements",
-            "Unique alien species with special abilities",
-            "Cross-platform play"
-        ],
-        links: {
-                demo: "https://play.google.com/store/apps/details?id=com.goodgaming.galactic",
-                github: null
-      }
-},
-    {
-      "title": "Trace | Leave A Trace",
-      "category": "Messaging App",
-      image: "/lovable-uploads/trace.png",
-      projectIcon: "/lovable-uploads/trace-icon.png",
-      "description": "A location-based social media app for sharing geo-tagged videos and exploring the world around you.",
-      "tags": ["Social", "Geo-Location", "iOS", "Firebase", "Swift", "SwiftUI","Unity","C#"],
-      features: [
-        "Share geo-tagged videos",
-        "Explore nearby content",
-        "Real-time messaging",
-        "User profiles and privacy controls",
-        "Push notifications"
-      ],
-      "links": {
-        "demo": "https://apps.apple.com/us/app/trace-leave-a-trace/id6450400543",
-        "github": null
-      }
-    },
-    {
-  "title": "Matty the Water Molecule",
-  "category": "Educational Game",
-  "image": "/lovable-uploads/matty.png",
-      projectIcon: "/lovable-uploads/matty-icon.png",
-  "description": "Educational game teaching children about water molecules through engaging gameplay.",
-  "tags": ["Education", "Kids", "Science","Unity","C#"],
-      features: [
-        "Interactive water molecule puzzles",
-        "Fun facts about science",
-        "Kid-friendly graphics",
-        "Progress tracking",
-        "Mini-games for learning"
-      ],
-      "links": {
-    "demo": "https://www.engagingeverystudent.com/matty/",
-    "github": null
-  }
-},
-    {
-  "title": "AR-Ways",
-  "category": "AR App",
-  "image": "/lovable-uploads/arway.png",
-      projectIcon: "/lovable-uploads/arway-icon.png",
-  "description": "Augmented reality app allowing users to place digital content in real-world locations.",
-  "tags": ["Augmented Reality", "AR", "Maps", "Navigation","Unity","C#"],
-      features: [
-        "Place digital objects in AR",
-        "Real-world location mapping",
-        "Navigation assistance",
-        "Customizable AR content",
-        "Cross-device support"
-      ],
-      "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nextechar.armaps",
-    "github": null
-  }
-},
-    {
-  "title": "Hide N Seek - Hunt Challenge",
-  "category": "Arcade Puzzle",
-  "image": "/lovable-uploads/hidenseek.png",
-      projectIcon: "/lovable-uploads/hidenseek-icon.png",
-  "description": "Classic hide and seek gameplay reimagined with object transformation and monster hunters.",
-  "tags": ["Puzzle", "Action", "Unity", "C#", "Firebase", "Google Play", "Game Analytics", "Monetization"],
-      features: [
-        "Object transformation mechanics",
-        "Monster hunter mode",
-        "Multiple levels and challenges",
-        "Leaderboards",
-        "In-game rewards"
-      ],
-      "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hide.and.seek.game",
-    "github": null
-  }
-},{
-  "title": "DIY Fidget Toy Maker",
-  "category": "Casual Simulation",
-  "image": "/lovable-uploads/toymaker.png",
-      projectIcon: "/lovable-uploads/toymaker-icon.png",
-  "description": "Craft your own fidget toys in 3D for a relaxing and creative experience.",
-  "tags": ["DIY", "Simulation", "ASMR", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-      features: [
-        "3D fidget toy crafting",
-        "ASMR sound effects",
-        "Customization options",
-        "Relaxing gameplay",
-        "Share creations"
-      ],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.dobroapps.popit.maker",
-    "github": null
-  }
-},
-    {
-  "title": "Pop It 3D DIY ASMR",
-  "category": "Casual Simulation",
-  "image": "/lovable-uploads/popit.png",
-      projectIcon: "/lovable-uploads/popit-icon.png",
-  "description": "Pop fidget toys in 3D with satisfying ASMR sounds for stress relief and casual play.",
-  "tags": ["ASMR", "Relaxation", "Casual", "Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-      features: [
-        "3D pop it toys",
-        "Satisfying ASMR audio",
-        "Stress relief gameplay",
-        "Unlockable designs",
-        "Daily challenges"
-      ],
-      "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.pop.it.asmr.relaxing.games",
-    "github": null
-  }
-},
-{
-  "title": "Hacker Simulator 3D",
-  "category": "Simulation",
-  "image": "/lovable-uploads/hacker.png",
-  projectIcon: "/lovable-uploads/hacker-icon.png",
-  "description": "Become a virtual hacker in this simulator, mastering stealth and digital tactics.",
-  "tags": ["Simulation", "Hacking", "Strategy","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  features: [
-    "Realistic hacking missions",
-    "Stealth gameplay",
-    "Upgradeable skills",
-    "Multiple hacking tools",
-    "Story mode"
-  ],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.hacker.simulator.game",
-    "github": null
-  }
-},
-{
-  "title": "PC Simulator 3D",
-  "category": "Simulation",
-  "image": "/lovable-uploads/pcsim.png",
-  projectIcon: "/lovable-uploads/pcsim-icon.png",
-  "description": "Learn PC building with realistic components, software installation, and troubleshooting.",
-  "tags": ["Simulation", "Education", "Tech","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  features: [
-    "Realistic PC building",
-    "Component selection",
-    "Software installation",
-    "Troubleshooting scenarios",
-    "Tutorial mode"
-  ],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.pc.simulator.game",
-    "github": null
-  }
-},
-{
-  "title": "House Flipper 3D - Home Design",
-  "category": "Simulation",
-  "image": "/lovable-uploads/houseflipper.png",
-  projectIcon: "/lovable-uploads/houseflipper-icon.png",
-  "description": "Renovate, restore, and decorate homes in this simulation and puzzle-based house flipper game.",
-  "tags": ["Simulation", "Puzzle", "Design","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  features: [
-    "Home renovation gameplay",
-    "Interior design options",
-    "Puzzle-based challenges",
-    "Property upgrades",
-    "Sell renovated homes"
-  ],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.kunhargamesstudios.house.flip.real.estate.game",
-    "github": null
-  }
-}, {
-  "title": "Sneaker Paint 3D",
-  "category": "Casual Simulation",
-  "image": "/lovable-uploads/sneakerart.png",
-  projectIcon: "/lovable-uploads/sneakerart-icon.png",
-  "description": "Unleash your creativity by painting and customizing sneakers in this art simulation game.",
-  "tags": ["Art", "Simulation", "Customization","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-      features: [
-        "Sneaker painting tools",
-        "Custom design gallery",
-        "Unlockable colors and patterns",
-        "Share designs",
-        "Creative challenges"
-      ],
-      "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.nexttechgamesstudios.sneaker.paint.game",
-    "github": null
-  }
-},
-{
-  "title": "Fill The Closet",
-  "category": "Casual Puzzle - Sort",
-  "image": "/lovable-uploads/fillthecloset.png",
-  projectIcon: "/lovable-uploads/fillthecloset-icon.png",
-  "description": "Sort clothes by size, type, and color in this ASMR-inspired closet organizing game.",
-  "tags": ["ASMR", "Sorting", "Relaxation","Unity","C#","Firebase","Google Play","Game Analytics","Monetization"],
-  features: [
-    "Clothes sorting puzzles",
-    "ASMR sound effects",
-    "Organize by color and type",
-    "Progressive difficulty",
-    "Unlockable closet themes"
-  ],
-  "links": {
-    "demo": "https://play.google.com/store/apps/details?id=com.kunhargames.fill.the.closet.organizer3d",
-    "github": null
-  }
-},
-  ];
-
-  const openProjectModal = (project) => {
+  const openProjectModal = (project: Project) => {
     console.log('Opening project modal for:', project.title);
     setSelectedProject(project);
     setIsProjectModalOpen(true);
@@ -262,10 +38,30 @@ const Projects = () => {
     setIsAllProjectsModalOpen(false);
   };
 
-  const handleViewDetails = (project) => {
+  const handleViewDetails = (project: Project) => {
     setIsAllProjectsModalOpen(false);
     openProjectModal(project);
   };
+
+  if (loading) {
+    return (
+      <section className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="text-lg">Loading projects...</div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="py-20 px-4 bg-muted/30 dark:bg-muted/20">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="text-lg text-red-500">Error loading projects: {error}</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <>
@@ -293,7 +89,7 @@ const Projects = () => {
               <div className="flex gap-6 pb-4 px-4 min-w-max">
                 {projects.map((project, index) => (
                   <div
-                    key={index}
+                    key={project.id}
                     className={`flex-none w-80 bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 hover:scale-105 group border cursor-pointer ${
                       isVisible 
                         ? 'opacity-100 translate-y-0 scale-100' 
@@ -309,15 +105,15 @@ const Projects = () => {
                   >
                     <div className="relative overflow-hidden h-48">
                       <img
-                        src={project.projectIcon}
+                        src={project.project_icon_url || '/placeholder.svg'}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
-                          console.log('Image failed to load:', project.projectIcon);
+                          console.log('Image failed to load:', project.project_icon_url);
                           console.log('Project:', project.title);
                         }}
                         onLoad={() => {
-                          console.log('Image loaded successfully:', project.projectIcon);
+                          console.log('Image loaded successfully:', project.project_icon_url);
                         }}
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
@@ -340,14 +136,14 @@ const Projects = () => {
                       <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
                       
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag, tagIndex) => (
+                        {project.tags?.map((tag, tagIndex) => (
                           <span
                             key={tagIndex}
                             className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-xs"
                           >
                             {tag}
                           </span>
-                        ))}
+                        )) || []}
                       </div>
                     </div>
                   </div>
@@ -388,13 +184,13 @@ const Projects = () => {
             <div className="space-y-6">
               {projects.map((project, index) => (
                 <div 
-                  key={index} 
+                  key={project.id} 
                   className="flex items-start gap-4 p-4 rounded-lg border hover:bg-muted/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer"
                   onClick={() => handleViewDetails(project)}
                 >
                   <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <img
-                      src={project.projectIcon}
+                      src={project.project_icon_url || '/placeholder.svg'}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
@@ -406,14 +202,14 @@ const Projects = () => {
                     </div>
                     <p className="text-muted-foreground text-sm mb-3">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-3">
-                      {project.tags.map((tag, tagIndex) => (
+                      {project.tags?.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
                           className="bg-muted text-muted-foreground px-2 py-1 rounded-full text-xs"
                         >
                           {tag}
                         </span>
-                      ))}
+                      )) || []}
                     </div>
                     <Button 
                       onClick={(e) => {
