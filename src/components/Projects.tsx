@@ -81,6 +81,28 @@ const Projects = () => {
       }
     },
     {
+      title: "Stack The Pixels - Daily Enigma",
+      category: "Multiplayer Puzzle Game",
+      image: "/lovable-uploads/stack-the-pixels.png",
+      projectIcon: "/lovable-uploads/stack-the-pixels-icon.png",
+      description: "A mysterious and engaging multiplayer puzzle game combining match-3 mechanics with immersive communication and gameplay effects.",
+      tags: ["Multiplayer", "Match-3", "Puzzle", "Voice Chat", "Ably", "Photon"],
+      detailedDescription: "Daily Enigma is an innovative multiplayer puzzle experience where up to 100 players can compete in real time. The game combines traditional match-3 mechanics with unique social features like distance-based voice chat powered by Photon Voice. Built for engaging, large-scale multiplayer gameplay using Ably's real-time communication framework, Daily Enigma also features custom shader effects for enhanced visual feedback and atmosphere.",
+      features: [
+        "Multiplayer support for up to 100 concurrent players",
+        "Classic match-3 mechanics with a competitive twist",
+        "Photon Voice Chat with distance-based audio proximity",
+        "Built on Ably for scalable, real-time multiplayer",
+        "Custom shader effects for immersive visual feedback",
+        "Leaderboard and daily challenges for player retention"
+      ],
+      techStack: ["Unity", "C#", "Ably", "Photon PUN2", "Photon Voice", "Shader Graph / HLSL"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.novospir.dailyenigma",
+        github: null
+      }
+    },
+    {
       "title": "Trace | Leave A Trace",
       "category": "Messaging App",
       image: "/lovable-uploads/trace.png",
