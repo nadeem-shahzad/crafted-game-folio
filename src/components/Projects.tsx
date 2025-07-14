@@ -58,6 +58,28 @@ const Projects = () => {
       }
     },
     {
+      title: "Immutabattle RPG",
+      category: "Web3 RPG Game",
+      image: "/lovable-uploads/immutable.png",
+      projectIcon: "/lovable-uploads/immutable-icon.png",
+      description: "A blockchain-integrated RPG where players earn, own, and trade NFT-based weapons and gear through immersive quest-driven gameplay.",
+      tags: ["Web3", "RPG", "NFT", "Blockchain", "Unity", "Immutable"],
+      detailedDescription: "Immutabattle RPG is a next-gen role-playing game that blends traditional RPG mechanics with blockchain ownership. Built using Unity and the Immutable SDK, players explore a fantasy world, earn NFT weapons and armor through quests, and engage in a player-driven economy using battle tokens. Featuring real asset ownership, crafting systems, and a live NFT auction house, this game brings Web3 innovation to immersive gameplay.",
+      features: [
+        "NFT Integration using Immutable blockchain — true ownership of weapons and armor",
+        "Battle Token Economy — earn, trade, or withdraw cryptocurrency rewards",
+        "Crafting & Burning System — forge NFT weapons and burn for resources",
+        "Live Auction House — players list NFT gear, accept bids, or sell instantly",
+        "Quest-Based Gameplay Loop — dynamic missions with NFT and token rewards",
+        "Secure Wallet Linking — safe blockchain onboarding and asset management"
+      ],
+      techStack: ["Unity", "C#", "Immutable SDK", "Web3.js", "Metamask Integration", "Custom UI/UX for Blockchain"],
+      links: {
+        demo: "https://drive.google.com/file/d/1gbwsnbUApQhmuJoOIODsZl_kuMZLy5Ke/view?usp=sharing",
+        github: null
+      }
+    },
+    {
       title: "Amerikano - Multiplayer Card Game",
       category: "Multiplayer Card Game",
       image: "/lovable-uploads/amerikano.png",
