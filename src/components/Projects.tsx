@@ -103,6 +103,78 @@ const Projects = () => {
       }
     },
     {
+      title: "Water Color Puzzle – Sort Game",
+      category: "Casual Puzzle Game",
+      image: "/lovable-uploads/water-sort.png",
+      projectIcon: "/lovable-uploads/water-sort-icon.png",
+      description: "A relaxing and addictive color-sorting puzzle game with 1000+ levels to challenge your brain.",
+      tags: ["Puzzle", "Sorting", "Casual", "Color Match", "Relaxing"],
+      detailedDescription: "Water Sort Puzzle is a fun and brain-training color-matching game where players must sort colored liquids into individual glasses until all colors are separated. With simple tap-to-pour mechanics and hundreds of levels, this visually pleasing game is perfect for casual play. It combines minimal UI, smooth visual effects, and shader-driven liquid animations for an engaging experience. No time limits, no penalties — just pure, satisfying puzzle-solving.",
+      features: [
+        "Implemented dynamic level generation system supporting over 1000 puzzles using ScriptableObjects and runtime pooling",
+        "Developed fluid sorting logic with stack-based state tracking for undo/retry functionality",
+        "Created a modular glass interaction system with single-tap input using Unity’s new Input System",
+        "Utilized Shader Graph to create smooth water fill animations and color blending effects",
+        "Integrated AdMob for interstitial and rewarded ads, with frequency capping and fallback logic",
+        "Implemented Game Analytics tracking for level progression, user retention, and ad behavior",
+        "Added level restart, undo, and soft hint system to improve user engagement",
+        "Optimized performance for low-end Android devices using lightweight rendering and object pooling"
+      ],
+      techStack: ["Unity", "C#", "Shader Graph", "AdMob", "Game Analytics"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.starstudio.water.color.sort.puzzle.game", // Add Play Store link if available
+        github: null
+      }
+    },
+    {
+      title: "Checkmated King",
+      category: "Strategy Puzzle",
+      image: "/lovable-uploads/checkmated-king.png",
+      projectIcon: "/lovable-uploads/checkmated-king-icon.png",
+      description: "A strategic twist on classic chess where you play as the King to counter enemy attacks and reclaim your kingdom.",
+      tags: ["Chess", "Strategy", "Puzzle", "Single-player"],
+      detailedDescription: "Checkmated King reimagines traditional chess by putting players in control of the King as the main protagonist. Instead of protecting the King, players lead him through a series of challenging puzzle levels against invading forces. Each stage introduces new pieces and mechanics, blending tactical decision-making with progressive difficulty to create a unique and compelling experience. With clean visuals, intuitive mechanics, and clever AI, this title offers a fresh, strategic journey for chess and puzzle lovers alike.",
+      features: [
+        "Designed modular level system with progressive difficulty and piece unlocking logic",
+        "Implemented custom chess-based grid movement and attack system for dynamic gameplay",
+        "Built enemy AI with adaptive difficulty using state machines for piece strategy variation",
+        "Used Shader Graph to develop distinct visual effects for moves, attacks, and board transitions",
+        "Integrated touch-friendly, drag-and-drop input for mobile chess mechanics",
+        "Developed a lightweight save/load system for level progress tracking",
+        "Implemented rewarded ads and interstitials using AdMob with user-friendly pacing",
+        "Tracked user engagement, level drop-offs, and move patterns via Game Analytics integration"
+      ],
+      techStack: ["Unity", "C#", "Shader Graph", "AdMob", "Game Analytics"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.nplays.checkmatedking",
+        github: null
+      }
+    },
+    {
+      title: "Solar System Simulator 3D",
+      category: "Educational Space Simulation",
+      image: "/lovable-uploads/solar-simulator.png",
+      projectIcon: "/lovable-uploads/solar-simulator-icon.png",
+      description: "An immersive and educational 3D space exploration simulator that brings the wonders of the solar system to life.",
+      tags: ["Simulation", "Space", "Education", "3D", "Science"],
+      detailedDescription: "Solar System Simulator 3D offers a visually stunning and scientifically accurate journey through space. It combines high-fidelity visuals, realistic celestial mechanics, and educational content to create an immersive experience. Players can explore planets, moons, and cosmic phenomena while learning fascinating astronomy facts in an intuitive and engaging way. Designed for both casual players and space enthusiasts, it provides a deep space experience with interactive learning.",
+      features: [
+        "Crafted a real-time solar system simulation using Unity’s physics engine with accurate orbital mechanics and gravity calculations",
+        "Developed scalable 3D planet rendering system using LOD and Shader Graph for atmospheric, lighting, and eclipse effects",
+        "Implemented user-driven spacecraft navigation with dynamic camera controls, free-fly mode, and orbital perspectives",
+        "Integrated educational content system with expandable trivia and fun facts per celestial body using a modular data structure",
+        "Customizable simulation controls including time scale, camera zoom, and orbital trails",
+        "Optimized celestial body textures and lighting for low-end and high-end Android devices",
+        "Integrated AdMob for non-intrusive rewarded ads tied to trivia unlocks and visual upgrades",
+        "Implemented Game Analytics for tracking exploration paths, user session length, and planet visit frequencies"
+      ],
+      techStack: ["Unity", "C#", "Shader Graph", "AdMob", "Game Analytics"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.nplays.universeplanetsimulator", // Add Play Store link when available
+        github: null
+      }
+    },
+    {
       title: "Stack The Pixels - Daily Enigma",
       category: "Multiplayer Puzzle Game",
       image: "/lovable-uploads/stack-the-pixels.png",
