@@ -33,6 +33,30 @@ const Projects = () => {
                 github: null
       }
 },
+
+    {
+      title: "Horse Racing - Multiplayer",
+      category: "Multiplayer Simulation Game",
+      image: "/lovable-uploads/horseracing.png",
+      projectIcon: "/lovable-uploads/horseracing-icon.png",
+      description: "A competitive real-time horse racing simulator featuring breeding, customization, and tactical gameplay.",
+      tags: ["Multiplayer", "Simulation", "Racing", "Strategy", "Breeding"],
+      detailedDescription: "Horse Racing - Multiplayer is a real-time competitive horse racing simulator where players manage elite stables and race against others around the globe. With deep breeding mechanics, strategic race tactics, and full customization, this game delivers a dynamic and immersive experience. Players can breed genetically diverse horses, race across unique tracks, and climb the leaderboards while managing resources and competing in events.",
+      features: [
+        "Real-time PvP races with up to 12 players",
+        "Advanced breeding system with genetic inheritance",
+        "Tactical racing: manage stamina, apply jockey strategies, and adapt to track conditions",
+        "Multiple racetracks with distinct layouts and weather variations",
+        "Extensive customization: horses, jockeys, silks, and stables",
+        "Progression system with unlockable content and global leaderboards",
+        "Live events and regular content updates to retain engagement"
+      ],
+      techStack: ["Unity", "Photon Fusion", "Firebase", "PlayFab", "C#", "Mirror (optional fallback)"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.playsportgames.horseracing",
+        github: null
+      }
+    },
     {
       "title": "Trace | Leave A Trace",
       "category": "Messaging App",
