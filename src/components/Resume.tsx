@@ -23,7 +23,7 @@ const Resume = () => {
 
   const experience = [
     {
-      position: "Leading the Hyper Casual Charge",
+      position: "Lead Game Developer",
       company: "Sabasoft, Lahore",
       period: "2019 - 2022",
       description: "For three years, I had the pleasure of working at Sabasoft, a game development company focused on creating engaging hyper casual games. During my time there, I played a key role in the development of a staggering 20 Hyper Casual games, contributing significantly to the studio's success."
@@ -31,7 +31,7 @@ const Resume = () => {
     {
       position: "Senior Game Developer",
       company: "Coeus Solutions",
-      period: "2022-Present",
+      period: "2022-2025",
       description: "In 2022, I embarked on a new chapter in my game development journey at Coeus Solutions, a service-based studio known for its expertise in crafting high-quality games across genres. This transition from hyper casual development at Sabasoft has broadened my skillset and exposed me to the exciting world of working on diverse game projects."
     }
   ];
