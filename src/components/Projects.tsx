@@ -58,6 +58,29 @@ const Projects = () => {
       }
     },
     {
+      title: "Amerikano - Multiplayer Card Game",
+      category: "Multiplayer Card Game",
+      image: "/lovable-uploads/amerikano.png",
+      projectIcon: "/lovable-uploads/amerikano-icon.png",
+      description: "A fast-paced multiplayer Rummy-style card game with strategic depth and exciting gameplay.",
+      tags: ["Multiplayer", "Card Game", "Rummy", "Strategy", "Photon PUN2"],
+      detailedDescription: "Amerikano is a unique and addicting multiplayer card game derived from the Rummy family, allowing up to 4 players to compete in real time. With a 106-card deck (two standard decks plus jokers), players aim to be the first to form valid sets and sequences. Built with Photon PUN2 for smooth, real-time online matches, the game challenges memory, logic, and card strategy, all wrapped in an elegant UI. Its blend of competitive mechanics and social fun makes it perfect for casual and serious players alike.",
+      features: [
+        "Real-time multiplayer gameplay for up to 4 players",
+        "Built with Photon PUN2 for stable networking and low latency",
+        "Classic Rummy-style rules with unique twists",
+        "Engaging UI/UX with card animations and sound effects",
+        "Dynamic matchmaking and private room creation",
+        "Custom avatars and profile systems",
+        "Cross-platform support (Android and upcoming WebGL)"
+      ],
+      techStack: ["Unity", "C#", "Photon PUN2", "Firebase", "Google Play Services"],
+      links: {
+        demo: "https://play.google.com/store/apps/details?id=com.amerikano.legends.classic.cardgames",
+        github: null
+      }
+    },
+    {
       "title": "Trace | Leave A Trace",
       "category": "Messaging App",
       image: "/lovable-uploads/trace.png",
